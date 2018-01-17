@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class ="page-header__wrapper">
+        <h1 class="page_header__title">Pink</h1> <!--Скрыт-->
+        <a class="page-header__logo">
+          <img src="#" alt="Pink">
+        </a>
+        <button class="page-header__toggler">Меню</button>
+      </div>
+      <nav class = "main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item"><a>Фотографии</a></li>
+          <li class="main-nav__item"><a>Конкурс</a></li>
+          <li class="main-nav__item"><a>HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="application">
+        <div class="apllication__platform download">
+          <a class="application__item application__item--apple" href="#">Apple</a>
+          <a class="application__item application__item--android" href="#">Android</a>
+          <a class="application__item application__item--windows" href="#">Windows Phone</a>
+        </div>
+        <button class="application__button">Скачать приложение</button>
+        <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </article>
+      <article class="advantages">
+        <h2 class="advantages__title">Преимущества</h2> <!--Скрыт-->
+        <p class="advantages__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+        <section class="advantages__list-wrapper advantages__list">
+          <div class="advantages__item advantages__item--mood">
+            <h3 class="advantages__item-title">Поднимает настроение</h3>
+            <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="advantages__item advantages__item--world">
+            <h3 class="advantages__item-title">Меняет мир вокруг</h3>
+            <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="advantages__item advantages__item--friends">
+            <h3 class="advantages__item-title">Заводит новых друзей</h3>
+            <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь с друзьями и заводите новых</p>
+          </div>
+        </section>
+      </article>
+      <artile class="reviews">
+        <div class="reviews__wrapper first-type-slides">
+          <div class ="first-type-slides__one">
+            <h2 class="reviews__title">Отзывы</h2> <!--Скрыт-->
+            <span class="reviews__author-name">Николай Петров</span>
+            <p class="reviews__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </div>
+        </div>
+        <div class="reviews__slider">
+	        <input type="radio" name="point" id="first_slider_one" checked>
+          <label for="slide1"></label>
+	        <input type="radio" name="point" id="first_slider_two">
+          <label for="slide2"></label>
+	        <input type="radio" name="point" id="first_slider_three">
+          <label for="slide3"></label>
+        </div>
+      </article>
+      <artile class="prices">
+        <h2 class="prices__title">Тарифы</h2> <!--Скрыт-->
+        <div class="prcies__wrapper second-type-slides">
+          <table class="prices__table">
+            <tr class="slider-prices__item">
+              <td>
+                <h3 class="prices__tarrif">Стандарт</h3>
+                <span class="prices__count">3,99 usd</span>
+              </td>
+            </tr>
+            <tr class="slider-prices__item">
+              <td>
+                <span class="prices__option">Розовый фильтр</span>
+              </td>
+              <td class="prices__option--include">+</td>
+            </tr>
+            <tr class="slider-prices__item">
+              <td>
+                <span class="prices__option">Смайлики</span>
+              </td>
+              <td class="prices__option--include">+</td>
+            </tr>
+            <tr class="slider-prices__item">
+              <td>
+                <span class="prices__option">Комментарии</span>
+              </td>
+              <td class="prices__option--exclude">-</td>
+            </tr>
+          </table>
+        </div>
+        <div class="prices__slider">
+          <input type="radio" name="point" id="second_slider_one" checked>
+          <label for="slide1"></label>
+          <input type="radio" name="point" id="second_slider_two">
+          <label for="slide2"></label>
+          <input type="radio" name="point" id="second_slider_three">
+          <label for="slide3"></label>
+        </div>
+      </article>
+      <article class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2> <!--Скрыт-->
+          <span class="contacts__description">Остались вопросы? Свяжитесь с нами!</span>
+          <div class="contacts__call">
+            <h3 class="contacts__header">Звоните:</h3>
+            <a href="tel:+78125556666" class="contacts__link">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__come">
+            <h3 class="contacts__header">Приезжайте в гости:</h3>
+            <a href="#" class="contacts__link">ул. Большая Конюшенная, 19/8</a>
+          </div>
+          <div class="contacts__write">
+            <h3 class="contacts__header">Пишите:</h3>
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+          </div>
+        <iframe class="contacts__map"></iframe>
+        </div>
+      </article>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <section class="page-footer__logo">
+          <a class="page-footer__image" href="#">
+            <img src="#" alt="Pink">
+          </a>
+        </section>
+        <section class="page-footer__social">
+          <a class="page-footer__social-button page-footer__social-button--twitter" href="#">Twitter</a>
+          <a class="page-footer__social-button page-footer__social-button--facebook" href="#">Facebook</a>
+          <a class="page-footer__social-button page-footer__social-button--youtube" href="#">Youtube</a>
+        </section>
+        <section class="page-footer__copyright">
+          <span>Разработано</span>
+          <a class="page-footer__link" href="#">
+            <img src="#" alt="HTML Academy">
+          </a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
