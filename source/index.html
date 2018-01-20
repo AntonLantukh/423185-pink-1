@@ -7,35 +7,37 @@
   <body>
     <header class="page-header">
       <div class ="page-header__wrapper">
-        <h1 class="page_header__title">Pink</h1> <!--Скрыт-->
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img src="#" alt="Pink">
         </a>
         <button class="page-header__toggler">Меню</button>
+        <nav class = "main-nav">
+          <ul class="main-nav__list site_list">
+            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+            <li class="site-list__item"><a>Фотографии</a></li>
+            <li class="site-list__item"><a>Конкурс</a></li>
+            <li class="site-list__item"><a>HTML Academy</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class = "main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-          <li class="main-nav__item"><a>Фотографии</a></li>
-          <li class="main-nav__item"><a>Конкурс</a></li>
-          <li class="main-nav__item"><a>HTML Academy</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Pink</h1> <!--Скрыт-->
       <article class="application">
-        <h2 class="application__title">Загрузка приложения</h2> <!--Скрыт-->
+        <h2 class="visually-hidden">Загрузка приложения</h2> <!--Скрыт-->
         <button class="application__button">Скачать приложение</button>
         <div class="apllication__platform download">
-          <a class="application__item application__item--apple" href="#">Apple</a>
-          <a class="application__item application__item--android" href="#">Android</a>
-          <a class="application__item application__item--windows" href="#">Windows Phone</a>
+          <a class="download__item download__item--apple" href="#">Apple</a>
+          <a class="download__item download__item--android" href="#">Android</a>
+          <a class="download__item download__item--windows" href="#">Windows Phone</a>
         </div>
         <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </article>
       <article class="advantages">
-        <h2 class="advantages__title">Преимущества</h2> <!--Скрыт-->
-        <p class="advantages__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+        <header class="advantages__header">
+          <h2 class="visually-hidden">Преимущества</h2> <!--Скрыт-->
+          <p class="advantages__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+        </header>
         <section class="advantages__list-wrapper advantages__list">
           <div class="advantages__item advantages__item--mood">
             <h3 class="advantages__item-title">Поднимает настроение</h3>
@@ -52,25 +54,22 @@
         </section>
       </article>
       <article class="reviews">
-        <h2 class="reviews__title">Отзывы</h2> <!--Скрыт-->
-        <div class="reviews__wrapper first-type-slides">
-          <div class ="first-type-slides__one">
+        <h2 class="visually-hidden">Отзывы</h2> <!--Скрыт-->
+        <div class="reviews__wrapper slides">
+          <div class =" reviews__item slides__item">
             <span class="reviews__author-name">Николай Петров</span>
             <p class="reviews__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           </div>
         </div>
         <div class="reviews__slider slider">
-	        <input type="radio" name="point" id="first_slider_one" checked>
-          <label for="first_slider_one"></label>
-	        <input type="radio" name="point" id="first_slider_two">
-          <label for="first_slider_two"></label>
-	        <input type="radio" name="point" id="first_slider_three">
-          <label for="first_slider_three"></label>
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
         </div>
       </article>
       <article class="prices">
-        <h2 class="prices__title">Тарифы</h2> <!--Скрыт-->
-        <div class="prcies__wrapper second-type-slides">
+        <h2 class="visually-hidden">Тарифы</h2> <!--Скрыт-->
+        <div class="prcies__wrapper slides">
           <table class="prices__table">
             <tr class="slider-prices__item">
               <td>
@@ -110,7 +109,7 @@
     </main>
     <footer class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">Контакты</h2> <!--Скрыт-->
+        <h2 class="visually-hidden">Контакты</h2> <!--Скрыт-->
         <span class="contacts__description">Остались вопросы? Свяжитесь с нами!</span>
         <section class="contacts__call">
           <h3 class="contacts__header">Звоните:</h3>
