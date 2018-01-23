@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -11,12 +12,12 @@
           <img src="#" alt="Pink">
         </a>
         <button class="page-header__toggler">Меню</button>
-        <nav class = "main-nav">
-          <ul class="main-nav__list site_list">
-            <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
-            <li class="site-list__item"><a href="photos.html">Фотографии</a></li>
-            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        <nav class ="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a class="site-list__link" href="#">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="photos.html">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </nav>
       </div>
@@ -26,17 +27,18 @@
       <article class="application">
         <h2 class="visually-hidden">Загрузка приложения</h2> <!--Скрыт-->
         <button class="application__button">Скачать приложение</button>
-        <div class="apllication__platform download">
-          <a class="download__item download__item--apple" href="#">Apple</a>
-          <a class="download__item download__item--android" href="#">Android</a>
-          <a class="download__item download__item--windows" href="#">Windows Phone</a>
-        </div>
+        <ul class="apllication__platform download">
+          <li class="download__item download__item--apple"><a class="download__link" href="#">Apple</a></li>
+          <li class="download__item download__item--android"><a class="download__link" href="#">Android</a></li>
+          <li class="download__item download__item--windows"><a class="download__link" href="#">Windows Phone</a></li>
+        </ul>
         <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </article>
       <article class="advantages">
         <header class="advantages__header">
           <h2 class="visually-hidden">Преимущества</h2> <!--Скрыт-->
-          <p class="advantages__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+          <p class="advantages__promo">Устали от серости мегаполиса?</p>
+          <p class="advantages__promo">Нам есть, что вам предложить!</p>
         </header>
         <section class="advantages__list-wrapper advantages__list">
           <div class="advantages__item advantages__item--mood">
