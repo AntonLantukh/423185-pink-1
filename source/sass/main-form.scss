@@ -7,13 +7,26 @@
 }
 
 .main-form__description {
+  padding-bottom: 10px;
+
   font-size: 14px;
   line-height: 18px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
   color: rgb(210, 40, 86);
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
+.main-form__button {
+  margin-left: 20px;
+}
+
+
 .main-form__note {
+  display: block;
+  padding-top: 20px;
+  padding-left: 20px;
+
   font-size: 14px;
   line-height: 30px;
   font-family: "Open Sans Regular", "Arial", sans-serif;

@@ -16,9 +16,9 @@
         </div>
         <nav class ="main-nav">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a class="site-list__link" href="#">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
             <li class="site-list__item"><a class="site-list__link" href="photos.html">Фотографии</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+            <li class="site-list__item site-list__item--active"><a class="site-list__link" href="#">Конкурс</a></li>
             <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </nav>
@@ -27,13 +27,13 @@
     <main>
       <section class="contest-form">
         <div class ="contest-form__wrapper">
-          <div class ="page-about">
+          <div class ="contest-form__about page-about">
             <h1 class="page-about__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
             <p class="page-about__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонсную карту! Пожалуйста, заполните форму ниже:</p>
           </div>
-          <form class="main-form" method="post" action="https://echo.htmlacademy.ru/">
+          <form class="contest-form__body main-form" method="post" action="https://echo.htmlacademy.ru/">
             <fieldset class="main-form__initials form-group">
-              <legend class="visually-hidden">ФИО</legend>
+              <h2 class="visually-hidden">ФИО</h2>
               <label class="form-group__input-label" for="surname">Фамилия:</label>
               <input class="form-group__input" type="text" id="surname" placeholder="Укажите фамилию *" required>
               <label class="form-group__input-label" for="name">Имя:</label>
@@ -42,38 +42,38 @@
               <input class="form-group__input" type="text" id="second-name" placeholder="Ну и отчество тоже *" required>
             </fieldset>
             <fieldset class="main-form__achievements form-group">
-              <legend class="main-form__description">Ваши безбашенные достижения в путешествии</legend>
-              <label class="form-group__checkbox-label" for="shark">Сделал селфи с акулой</label>
+              <h2 class="main-form__description">Ваши безбашенные достижения в путешествии</h2>
               <input type="checkbox" id="shark" checked>
-              <label class="form-group__checkbox-label" for="beach">Обгорел на пляже</label>
+              <label class="form-group__checkbox-label" for="shark">Сделал селфи с акулой</label>
               <input type="checkbox" id="beach" checked>
-              <label class="form-group__checkbox-label" for="chuck">Видел Чака Норриса</label>
+              <label class="form-group__checkbox-label" for="beach">Обгорел на пляже</label>
               <input type="checkbox" id="chuck">
-              <label class="form-group__checkbox-label" for="souvenir">Накупил сувениров</label>
+              <label class="form-group__checkbox-label" for="chuck">Видел Чака Норриса</label>
               <input type="checkbox" id="souvenir">
-              <label class="form-group__checkbox-label" for="tower">Удержал башню</label>
+              <label class="form-group__checkbox-label" for="souvenir">Накупил сувениров</label>
               <input type="checkbox" id="tower" checked>
-              <label class="form-group__checkbox-label" for="hotel">Разгромил отель</label>
+              <label class="form-group__checkbox-label" for="tower">Удержал башню</label>
               <input type="checkbox" id="hotel">
+              <label class="form-group__checkbox-label" for="hotel">Разгромил отель</label>
             </fieldset>
             <fieldset class="main-form__contacts form-group">
-              <legend class="main-form__description">Контактная информация</legend>
+              <h2 class="main-form__description">Контактная информация</h2>
               <label class="form-group__input-label" for="phone">Номер телефона</label>
               <input class="form-group__input" type="text" id="phone" placeholder="Номер, пожалуйста">
               <label class="form-group__input-label" for="mail">Адрес почты</label>
               <input class="form-group__input" type="text" id="mail" placeholder="Введите почту *" required>
             </fieldset>
             <fieldset class="main-form__application form-group">
-              <legend class="main-form__description">С каким приложением путешествовали?</legend>
-              <label class="form-group__checkbox-label" for="ios">Pink для iOS</label>
+              <h2 class="main-form__description">С каким приложением путешествовали?</h2>
               <input type="radio" id="ios">
-              <label class="form-group__checkbox-label" for="android">Pink на Android</label>
+              <label class="form-group__checkbox-label" for="ios">Pink для iOS</label>
               <input type="radio" id="android">
-              <label class="form-group__checkbox-label" for="windows-phone">Windows Phone</label>
+              <label class="form-group__checkbox-label" for="android">Pink на Android</label>
               <input type="radio" id="windows-phone">
+              <label class="form-group__checkbox-label" for="windows-phone">Windows Phone</label>
             </fieldset>
             <fieldset class="main-form__emotions form-group">
-              <legend class="main-form__description">Опишите сови эмоции</legend>
+              <h2 class="main-form__description">Опишите сови эмоции</h2>
               <label class="form-group__input-label visually-hidden" for="emotions">Эмоции</label>
               <input class="form-group__input form-group__input--wide" type="text" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
             </fieldset>
