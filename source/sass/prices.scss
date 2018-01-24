@@ -1,8 +1,14 @@
 .prices {
   text-transform: uppercase;
+  background-color: rgb(242, 242, 242);
+}
+
+.prices__wrapper {
+  padding-bottom: 20px;
 }
 
 .prices__header {
+  padding: 24px 110px;
   background-color: rgb(40, 54, 69);
 }
 
@@ -11,6 +17,9 @@
 }
 
 .prices__tarrif {
+  padding: 0;
+  margin: 0;
+
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -27,11 +36,14 @@
 }
 
 .prices__option {
+  padding-left: 24px;
+
   font-size: 14px;
   line-height: 30px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
-  text-align: center;
+  text-align: left;
   color: rgb(40, 54, 69);
 
+  background-color: rgb(255, 255, 255);
   border: 2px solid rgb(229, 229, 229);
 }

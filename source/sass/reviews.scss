@@ -1,14 +1,11 @@
 .reviews {
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-color: rgb(255, 255, 255);
-  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .reviews__author-name {
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
-  text-align: center;
   color: rgb(0, 0, 0);
 }
 
@@ -16,6 +13,5 @@
   font-size: 14px;
   line-height: 30px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
-  text-align: center;
   color: rgb(40, 54, 69);
 }
