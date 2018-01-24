@@ -1,24 +1,7 @@
-@font-face {
-  font-family: "Open Sans Regular";
-  src:
-    url("../fonts/opensans.woff") format("woff"),
-    url("../fonts/opensans.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Open Sans Bold";
-  src:
-    url("../fonts/opensansbold.woff") format("woff"),
-    url("../fonts/opensansbold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Open Sans Light";
-  src:
-    url("../fonts/opensanslight.woff") format("woff"),
-    url("../fonts/opensanslight.woff2") format("woff2");
-}
-
 .page-header {
-  background-color: rgb(29, 38, 49);
+  background-color: rgb(40, 54, 69);
+}
+
+.page-header__wrapper {
+  padding: 0 20px;
 }

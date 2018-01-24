@@ -1,0 +1,32 @@
+.loaded-post {
+  background-color: rgb(242, 242, 242);
+}
+
+.loaded-post__review-author {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  color: rgb(40, 54, 69);
+}
+
+.loaded-post__review-time {
+  font-size: 12px;
+  line-height: 24px;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  color: rgb(40, 54, 69);
+}
+
+.loaded-post__review-description {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  color: rgb(40, 54, 69);
+}
+
+.loaded-post__review-likes {
+  font-size: 12px;
+  line-height: 24px;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  color: rgb(210, 40, 86);
+  text-transform: uppercase;
+}
