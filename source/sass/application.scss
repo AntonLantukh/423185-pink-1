@@ -1,0 +1,30 @@
+.application {
+  text-align: center;
+
+  background-image:
+    url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-color: rgb(29, 38, 49);
+  background-size: contain contain;
+  background-repeat: no-repeat no-repeat;
+}
+
+.application__button {
+  margin-top: 115px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(29, 38, 49);
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.application__description {
+  padding: 35px 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  color: rgb(255, 255, 255);
+}
