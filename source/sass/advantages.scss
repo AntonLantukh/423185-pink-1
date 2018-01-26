@@ -1,7 +1,15 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
 .advantages__header {
-  padding-top: 30px;
+  margin: 50px 0 40px 0;
+
   font-size: 24px;
-  line-height: 12px;
+  line-height: 28px;
   font-family: "Open Sans Light", "Arial", sans-serif;
   text-align: center;
   color: rgb(40, 54, 69);
@@ -14,25 +22,63 @@
   padding-bottom: 30px;
 }
 
-.advantages__list {
-  padding: 30px 0;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-color: rgb(242, 242, 242);
+.advantages__wrapper {
+  padding: 90px 20px 320px 20px;
 }
 
-.advantages__item-title {
-  font-size: 18px;
-  line-height: 10px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  text-align: center;
-  color: rgb(40, 54, 69);
+@media (min-width: $tablet-width) {
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .advantages__header {
+    margin: 58px 0 100px 0;
+
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .advantages__promo:last-child {
+    width: 345px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .advantages__wrapper {
+    padding: 80px 20px 20px 320px;
+  }
 }
 
-.advantages__item-description {
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "Open Sans Regular", "Arial", sans-serif;
-  text-align: center;
-  color: rgb(40, 54, 69);
+@media (min-width: $desktop-width) {
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .advantages__header {
+    margin: 75px 0 165px 0;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .advantages__promo {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .advantages__promo:last-child {
+    width: 460px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .advantages__wrapper {
+    padding: 350px 130px 470px 130px;
+  }
 }

@@ -2,39 +2,40 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class ="page-header__wrapper">
-        <div class="page-header__toggles pre-menu">
-          <a class="page-header__logo pre-menu__logo" href="№">
-            <img src="#" alt="Pink">
-          </a>
-          <button class="page-header__toggler pre-menu__burger">Меню</button>
-        </div>
-        <nav class ="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a class="site-list__link" href="#">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="photos.html">Фотографии</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          </ul>
-        </nav>
+      <div class="page-header__toggles pre-menu">
+        <a class="page-header__logo pre-menu__logo" href="№">
+          <img src="#" alt="Pink">
+        </a>
+        <button class="page-header__toggler pre-menu__burger">Меню</button>
       </div>
+      <nav class ="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a class="site-list__link" href="#">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="photos.html">Фотографии</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <h1 class="visually-hidden">Pink</h1> <!--Скрыт-->
       <article class="application">
         <h2 class="visually-hidden">Загрузка приложения</h2> <!--Скрыт-->
-        <button class="application__button button-index">Скачать приложение</button>
-        <ul class="apllication__platform download">
-          <li class="download__item download__item--apple"><a class="download__link" href="#">Apple</a></li>
-          <li class="download__item download__item--android"><a class="download__link" href="#">Android</a></li>
-          <li class="download__item download__item--windows"><a class="download__link" href="#">Windows Phone</a></li>
-        </ul>
-        <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="application__wrapper">
+          <button class="application__button button-index">Скачать приложение</button>
+          <ul class="apllication__platform download">
+            <li class="download__item download__item--apple"><a class="download__link" href="#">Apple</a></li>
+            <li class="download__item download__item--android"><a class="download__link" href="#">Android</a></li>
+            <li class="download__item download__item--windows"><a class="download__link" href="#">Windows Phone</a></li>
+          </ul>
+          <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </article>
       <article class="advantages">
         <header class="advantages__header">
@@ -42,28 +43,28 @@
           <span class="advantages__promo">Устали от серости мегаполиса?</span>
           <span class="advantages__promo">Нам есть, что вам предложить!</span>
         </header>
-        <section class="advantages__list-wrapper advantages__list">
-          <div class="advantages__item advantages__item--mood">
-            <h3 class="advantages__item-title">Поднимает настроение</h3>
-            <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <section class="advantages__wrapper advantages-list">
+          <div class="advantages-list__item advantages-list__item--mood">
+            <h3 class="advantages-list__item-title">Поднимает настроение</h3>
+            <p class="advantages-list__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </div>
-          <div class="advantages__item advantages__item--world">
-            <h3 class="advantages__item-title">Меняет мир вокруг</h3>
-            <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <div class="advantages-list__item advantages-list__item--world">
+            <h3 class="advantages-list__item-title">Меняет мир вокруг</h3>
+            <p class="advantages-list__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </div>
-          <div class="advantages__item advantages__item--friends">
-            <h3 class="advantages__item-title">Заводит новых друзей</h3>
-            <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь с друзьями и заводите новых</p>
+          <div class="advantages-list__item advantages-list__item--friends">
+            <h3 class="advantages-list__item-title">Заводит новых друзей</h3>
+            <p class="advantages-list__item-description">Ставьте лайки, комментируйте, делитесь с друзьями и заводите новых</p>
           </div>
         </section>
       </article>
       <article class="reviews">
         <h2 class="visually-hidden">Отзывы</h2> <!--Скрыт-->
         <div class="reviews__wrapper slides">
-          <blockquote class ="reviews__item slides__item">
+          <div class ="reviews__item slides__item">
             <span class="reviews__author-name">Николай Петров</span>
             <p class="reviews__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-          </blockquote>
+          </div>
         </div>
         <div class="reviews__slider slider">
           <button class="slider__toggle" type="button">1</button>

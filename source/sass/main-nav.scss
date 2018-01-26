@@ -1,4 +1,6 @@
 .main-nav {
+  width: auto;
+
   font-size: 18px;
   line-height: 32px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -10,4 +12,14 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 634px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Open Sans Regular", "Arial", sans-serif;
+  }
 }
