@@ -1,31 +1,44 @@
+.main-form__initials {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
 .main-form__achievements {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
   background-color: rgb(242, 242, 242);
+}
+
+.main-form__contacts {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
 }
 
 .main-form__application {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
   background-color: rgb(242, 242, 242);
 }
 
-.main-form__description {
-  padding-bottom: 10px;
-
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Open Sans Regular", "Arial", sans-serif;
-  color: rgb(210, 40, 86);
-  font-weight: normal;
-  text-transform: uppercase;
+.main-form__send {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .main-form__button {
-  margin-left: 20px;
+  width: 280px;
+  margin: 0 auto;
 }
-
 
 .main-form__note {
   display: block;
   padding-top: 20px;
-  padding-left: 20px;
 
   font-size: 14px;
   line-height: 30px;
@@ -36,4 +49,76 @@
 
 .main-form__note--red {
   color: rgb(210, 40, 86);
+}
+
+@media (min-width: $tablet-width) {
+  .main-form__initials {
+    order: 1;
+    width: 620px;
+    border: 0 none;
+  }
+
+  .main-form__application {
+    order: 2;
+    width: 620px;
+    border: 0 none;
+  }
+
+  .main-form__achievements {
+    order: 4;
+    width: 620px;
+    border: 0 none;
+  }
+
+  .main-form__contacts {
+    order: 3;
+    width: 620px;
+    border: 0 none;
+  }
+
+  .main-form__emotions {
+    order: 5;
+    width: 620px;
+    border: 0 none;
+  }
+
+  .main-form__send {
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .main-form__button {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form__initials {
+    width: 305px;
+  }
+
+  .main-form__application {
+    width: 305px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(242, 242, 242);
+  }
+
+  .main-form__contacts {
+    width: 800px;
+    flex-direction: row;
+    border: 2px solid rgb(242, 242, 242);
+  }
+
+  .main-form__achievements {
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(242, 242, 242);
+  }
+
+  .main-form__send {
+    width: 940px;
+  }
 }
