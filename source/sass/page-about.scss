@@ -1,22 +1,14 @@
 .page-about {
+  width: 320px;
+  margin: 0 auto;
+  padding: 56px 0 56px 0;
   text-align: center;
 }
 
-.page-about__header {
-  padding: 50px 0 100px 0;
-
-  font-size: 24px;
-  line-height: 18px;
-  font-family: "Open Sans Light", "Arial", sans-serif;
-  color: rgb(255, 255, 255);
-
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-color: rgb(40, 54, 69);
-}
-
 .page-about__description {
-  padding: 30px 0 40px 0;
+  width: 256px;
+  margin: 0 auto;
+  padding: 0;
 
   font-size: 14px;
   line-height: 30px;
@@ -24,4 +16,30 @@
   color: rgb(40, 54, 69);
 
   background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: $tablet-width) {
+  .page-about {
+    width: 660px;
+    margin: 0 auto;
+    padding: 100px 0 75px 0;
+  }
+
+  .page-about__description {
+    width: 454px;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-about {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 105px 0 92px 0;
+  }
+
+  .page-about__description {
+    width: 590px;
+  }
 }
