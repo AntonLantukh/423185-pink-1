@@ -8,7 +8,7 @@
   font-size: 14px;
   line-height: 18px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
-  color: rgb(210, 40, 86);
+  color: $color-pink;
   font-weight: normal;
   text-transform: uppercase;
 
@@ -19,7 +19,7 @@
   font-size: 14px;
   line-height: 30px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
-  color: rgb(210, 40, 86);
+  color: $color-pink;
   text-transform: uppercase;
 }
 
@@ -29,9 +29,9 @@
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
-  color: rgb(40, 54, 69);
+  color: $color-blue;
 
-  border: 2px solid rgb(242, 242, 242);
+  border: 2px solid $color-grey;
 }
 
 .form-group__input--wide {
@@ -46,7 +46,7 @@
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
-  color: rgb(40, 54, 69);
+  color: $color-blue;
 }
 
 @media (min-width: $tablet-width) {

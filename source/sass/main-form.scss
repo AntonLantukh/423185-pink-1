@@ -2,26 +2,34 @@
   display: flex;
   flex-direction: column;
   width: 280px;
+  border: 0 none;
 }
 
 .main-form__achievements {
   display: flex;
   flex-direction: column;
   width: 280px;
-  background-color: rgb(242, 242, 242);
+  background-color: $color-grey;
+  border: 0 none;
 }
 
 .main-form__contacts {
   display: flex;
   flex-direction: column;
   width: 280px;
+  border: 0 none;
 }
 
 .main-form__application {
   display: flex;
   flex-direction: column;
   width: 280px;
-  background-color: rgb(242, 242, 242);
+  background-color: $color-grey;
+  border: 0 none;
+}
+
+.main-form__emotions {
+  border: 0 none;
 }
 
 .main-form__send {
@@ -43,43 +51,38 @@
   font-size: 14px;
   line-height: 30px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
-  color: rgb(40, 54, 69);
+  color: $color-blue;
   text-transform: uppercase;
 }
 
 .main-form__note--red {
-  color: rgb(210, 40, 86);
+  color: $color-pink;
 }
 
 @media (min-width: $tablet-width) {
   .main-form__initials {
     order: 1;
     width: 620px;
-    border: 0 none;
   }
 
   .main-form__application {
     order: 2;
     width: 620px;
-    border: 0 none;
   }
 
   .main-form__achievements {
     order: 4;
     width: 620px;
-    border: 0 none;
   }
 
   .main-form__contacts {
     order: 3;
     width: 620px;
-    border: 0 none;
   }
 
   .main-form__emotions {
     order: 5;
     width: 620px;
-    border: 0 none;
   }
 
   .main-form__send {
@@ -102,20 +105,20 @@
 
   .main-form__application {
     width: 305px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(242, 242, 242);
+    background-color: $color-white;
+    border: 2px solid $color-grey;
   }
 
   .main-form__contacts {
     width: 800px;
     flex-direction: row;
-    border: 2px solid rgb(242, 242, 242);
+    border: 2px solid $color-grey;
   }
 
   .main-form__achievements {
     width: 800px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(242, 242, 242);
+    background-color: $color-white;
+    border: 2px solid $color-grey;
   }
 
   .main-form__send {

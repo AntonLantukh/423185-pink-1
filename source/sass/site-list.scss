@@ -8,17 +8,17 @@
   flex-basis: 32px;
   padding: 16px 0;
 
-  border: 1px 0 rgb(0, 0, 0);
+  border: 1px 0 $color-black;
   box-shadow:
     0 1px rgba(255, 255, 255, 0.1) inset,
     0 -1px rgba(255, 255, 255, 0.1) inset,
-    0 1px rgb(0, 0, 0),
-    0 -1px rgb(0, 0, 0);
+    0 1px $color-black,
+    0 -1px $color-black;
 }
 
 .site-list__link {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: $color-white;
 }
 
 @media (min-width: $desktop-width) {

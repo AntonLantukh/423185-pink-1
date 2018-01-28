@@ -8,7 +8,7 @@
   background-image:
     url("../img/iphone-hand-mobile@1x.png"),
     url("../img/bg-back-mobile@1x.jpg");
-  background-color: rgb(29, 38, 49);
+  background-color: $color-dark-blue;
   background-size: 50%, 320px 395px;
   background-position-y: 215px, 0;
   background-repeat: no-repeat no-repeat;
@@ -24,10 +24,10 @@
 
   font-size: 18px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
-  color: rgb(255, 255, 255);
+  color: $color-white;
 
-  background-color: rgb(29, 38, 49);
-  border: 3px solid rgb(255, 255, 255);
+  background-color: $color-dark-blue;
+  border: 3px solid $color-white;
 }
 
 .application__description {
@@ -35,7 +35,7 @@
   font-size: 14px;
   line-height: 24px;
   font-family: "Open Sans Light", "Arial", sans-serif;
-  color: rgb(255, 255, 255);
+  color: $color-white;
 }
 
 @media (min-width: $tablet-width) {

@@ -9,14 +9,14 @@
   font-size: 18px;
   line-height: 24px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
-  color: rgb(0, 0, 0);
+  color: $color-black;
 }
 
 .popup__description {
   font-size: 14px;
   line-height: 24px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
-  color: rgb(40, 54, 69);
+  color: $color-blue;
 }
 
 .popup__button {
