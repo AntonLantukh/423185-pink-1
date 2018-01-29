@@ -1,12 +1,12 @@
 .button-form {
-  padding: 20px 50px;
+  padding: 20px 0;
 
   font-size: 18px;
   line-height: 10px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
-  color: rgb(255, 255, 255);
+  color: $color-white;
   text-transform: uppercase;
 
-  background-color: rgb(42, 171, 109);
+  background-color: $color-green;
   border: 0;
 }

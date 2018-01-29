@@ -1,49 +1,97 @@
 .prices {
+  margin: 0 auto;
+
+  text-align: center;
+
   text-transform: uppercase;
-  background-color: rgb(242, 242, 242);
+  background-color: $color-grey;
 }
 
 .prices__wrapper {
-  padding-bottom: 20px;
+  padding: 100px 0 40px 0;
 }
 
 .prices__header {
-  padding: 24px 110px;
-  background-color: rgb(40, 54, 69);
+  width: 320px;
+  padding: 15px 0 15px 0;
+
+  background-color: $color-blue;
 }
 
 .prices__table {
+  margin: 0 auto;
+
   border-collapse: collapse;
 }
 
 .prices__tarrif {
-  padding: 0;
+  padding: 0 0 10px 0;
   margin: 0;
 
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
-  text-align: center;
-  color: rgb(255, 255, 255);
+  color: $color-white;
 }
 
 .prices__value {
+  padding: 0;
+  margin: 0;
+
   font-size: 24px;
   line-height: 30px;
   font-family: "Open Sans Light", "Arial", sans-serif;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: $color-white;
 }
 
 .prices__option {
-  padding-left: 24px;
+  padding: 15px 0 15px 24px;
 
   font-size: 14px;
   line-height: 30px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
   text-align: left;
-  color: rgb(40, 54, 69);
+  color: $color-blue;
 
-  background-color: rgb(255, 255, 255);
+  background-color: $color-white;
   border: 2px solid rgb(229, 229, 229);
+}
+
+.prices__slider {
+  margin: 0 auto;
+  padding-bottom: 46px;
+}
+
+@media (min-width: $tablet-width) {
+  .prices__wrapper {
+    padding: 90px 0 70px 0;
+  }
+
+  .prices__tarrif {
+    font-size: 16px;
+  }
+
+  .prices__value {
+    font-size: 18px;
+  }
+
+  .prices__header {
+    width: 320px;
+    padding: 5px 0 5px 0;
+  }
+
+  .prices__option {
+    height: 43px;
+  }
+
+  .prices__slider {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prices__wrapper {
+    padding: 150px 0 100px 0;
+  }
 }

@@ -1,17 +1,36 @@
 .contacts {
-  background-color: rgb(255, 255, 255);
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $color-white;
+}
+
+.contacts__wrapper {
+  padding: 50px 50px 0 50px;
+}
+
+.contacts__flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
 .contacts__map {
+  margin: 0 auto;
   background-image: url("../img/bg-map-mobile@1x.png");
 }
 
 .contacts__description {
+  width: 235px;
+  margin: 0 auto;
+  padding-bottom: 45px;
+
   font-size: 24px;
-  line-height: 12px;
-  font-family: "Open Sans Regular", "Arial", sans-serif;
+  line-height: 28px;
+  font-family: "Open Sans Light", "Arial", sans-serif;
   text-align: center;
-  color: rgb(40, 54, 69);
+  color: $color-blue;
 }
 
 .contacts__header {
@@ -19,7 +38,7 @@
   line-height: 12px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   text-align: center;
-  color: rgb(40, 54, 69);
+  color: $color-blue;
 }
 
 .contacts__element {
@@ -28,7 +47,72 @@
 
 .contacts__link {
   font-size: 24px;
-  line-height: 12px;
+  line-height: 28px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
-  color: rgb(210, 40, 86);
+  color: $color-pink;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 660px;
+  }
+
+  .contacts__wrapper {
+    padding: 60px 40px 0 40px;
+  }
+
+  .contacts__flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .contacts__description {
+    width: 380px;
+    margin: 0 auto;
+    padding-bottom: 55px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .contacts__element {
+    width: 250px;
+    padding-bottom: 60px;
+  }
+
+  .contacts__element:nth-child(3) {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 1200px;
+  }
+
+  .contacts__flex-wrapper {
+    flex-wrap: no-wrap;
+    justify-content: center;
+  }
+
+  .contacts__description {
+    width: 465px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  .contacts__element {
+    width: 300px;
+    padding-bottom: 0;
+  }
+
+  .contacts__element:nth-child(3) {
+    margin: 0;
+  }
 }
