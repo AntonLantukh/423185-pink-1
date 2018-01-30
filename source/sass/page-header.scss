@@ -32,6 +32,38 @@
   background-color: $color-blue;
 }
 
+.page-header__logo {
+  position: relative;
+  top: 0;
+  right: 0;
+
+  display: block;
+  width: 75px;
+  height: 22px;
+
+  font-size: 0;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.page-header__logo::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 75px;
+  height: 22px;
+
+  content: "";
+  transform: translate(-50%, -50%);
+
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+
 .page-header__toggler {
   position: relative;
   top: 0;
@@ -86,20 +118,65 @@
   .page-header__pre-menu--closed {
     width: 620px;
   }
+
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+  }
+
+  .page-header__logo::after {
+    width: 147px;
+    height: 40px;
+    background-image: url("../img/logo-pink-blue-mobile.svg");
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -600px;
     flex-direction: row;
     justify-content: space-between;
 
     width: 940px;
-    margin: 0 auto;
     padding: 0 130px;
+
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header__pre-menu {
     width: 160px;
     padding: 0;
+  }
+
+  .page-header__pre-menu--closed {
+    position: static;
+    width: 280px;
+    background-color: transparent;
+  }
+
+  .page-header__logo {
+    width: 147px;
+    height: 40px;
+  }
+
+  .page-header__logo::after {
+    width: 147px;
+    height: 40px;
+    background-image: url("../img/logo-pink-blue-mobile.svg");
+  }
+
+  .page-header__toggler {
+    display: none;
+  }
+
+  .page-header__pre-menu--opened {
+    background-color: transparent;
+  }
+
+  .page-header__pre-menu--nojs {
+    background-color: transparent;
   }
 }

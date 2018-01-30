@@ -47,13 +47,20 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
   }
 
   .site-list__item {
-    flex-basis: auto;
+    flex-basis: 131px;
     padding: 0;
 
     border: none;
     box-shadow: none;
+  }
+
+  .site-list__item--last {
+    position: static;
+    z-index: 0;
+    background-color: transparent;
   }
 }

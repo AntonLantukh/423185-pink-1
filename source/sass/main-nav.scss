@@ -24,10 +24,17 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 634px;
+    width: 654px;
 
     font-size: 18px;
     line-height: 18px;
     font-family: "Open Sans Regular", "Arial", sans-serif;
+    text-transform: none;
+    background-color: transparent;
+  }
+
+  .main-nav--closed {
+    display: block;
+    background-color: transparent;
   }
 }

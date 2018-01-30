@@ -1,13 +1,13 @@
 .advantages-list {
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position-x: 50%;
-  background-position-y: 500px;
+  background-position-y: 435px;
   background-repeat: no-repeat;
   background-color: $color-grey;
 }
 
 .advantages-list__item {
-  padding: 0 0 12px 0;
+  padding: 0 0 33px 0;
 }
 
 .advantages-list__item-title {
@@ -21,6 +21,9 @@
 }
 
 .advantages-list__item-description {
+  padding-top: 10px;
+  margin: 0;
+
   font-size: 14px;
   line-height: 24px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
@@ -28,19 +31,25 @@
   color: $color-blue;
 }
 
+.advantages-list__item--time {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .advantages-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     width: 320px;
 
-    background-position-x: 20%;
-    background-position-y: 100px;
+    background-size: 40%;
+    background-position-x: 5%;
+    background-position-y: -50px;
   }
 
   .advantages-list__item {
-    padding: 0 0 12px 0;
+    padding: 0 0 36px 0;
   }
 
   .advantages-list__item-title {
@@ -50,25 +59,37 @@
   .advantages-list__item-description {
     text-align: left;
   }
+
+  .advantages-list__item--time {
+    display: block;
+    width: 620px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .advantages-list {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     width: auto;
+    background-image:
+      url("../img/iphone-screen-mobile@1x.png"),
+      url("../img/iphone-screen-mobile@1x.png"),
+      url("../img/iphone-screen-mobile@1x.png");
 
-    background-position-x: 16%;
-    background-position-y: 50px;
+    background-size: 16%;
+    background-position-x: 18%, 50%, 82%;
+    background-position-y: -95px;
   }
 
   .advantages-list__item {
-    width: 230px;
+    width: 234px;
   }
 
   .advantages-list__item-title {
+    margin: 0;
+    padding-bottom: 16px;
+
     font-size: 30px;
     line-height: 30px;
     text-align: center;
