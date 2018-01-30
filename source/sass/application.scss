@@ -9,9 +9,11 @@
     url("../img/iphone-hand-mobile@1x.png"),
     url("../img/bg-back-mobile@1x.jpg");
   background-color: $color-dark-blue;
-  background-size: 50%, 320px 395px;
-  background-position-y: 215px, 0;
+  background-size: 50%, 100%;
+  background-position-y: 210px, 0;
   background-repeat: no-repeat no-repeat;
+
+  z-index: 2;
 }
 
 .application__wrapper {
@@ -20,7 +22,7 @@
 
 .application__button {
   margin-top: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   font-size: 18px;
   font-family: "Open Sans Bold", "Arial", sans-serif;

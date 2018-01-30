@@ -14,6 +14,14 @@
   padding: 0;
 }
 
+.main-nav--closed {
+  display: none;
+}
+
+.main-nav--nojs {
+  display: block;
+}
+
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 634px;
