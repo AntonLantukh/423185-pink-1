@@ -38,7 +38,7 @@
   }
 
   .effect__wrapper {
-    padding: 86px 20px 125px 330px;
+    padding: 81px 20px 66px 334px;
   }
 
   .effect__title {
@@ -56,14 +56,14 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .effect {
     width: 1200px;
     background-color: $color-grey;
   }
 
   .effect__wrapper {
-    padding: 86px 20px 115px 495px;
+    padding: 81px 20px 115px 334px;
   }
 
   .effect--transform {
