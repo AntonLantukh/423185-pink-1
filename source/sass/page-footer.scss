@@ -12,24 +12,100 @@
   padding-bottom: 40px;
 }
 
-.page-footer__copyright {
+.page-footer__element--copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 145px;
+  padding-top: 17px;
+
   font-size: 14px;
   line-height: 18px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
   color: $color-blue;
 }
 
+.page-footer__madeby {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.page-footer__link {
+  display: inline-block;
+  margin-right: -5px;
+}
+
+.page-footer__social-button {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  text-decoration: none;
+  border: 3px solid $color-grey;
+  border-radius: 50%;
+}
+
+.page-footer__social-button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  transform: translate(-50%, -50%);
+}
+
+.page-footer__social-button--twitter::after {
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.page-footer__social-button--facebook::after {
+  width: 9px;
+  height: 18px;
+  background-image: url("../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+}
+
+.page-footer__social-button--youtube::after {
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+}
+
+.page-footer {
+  display: none;
+}
+
+.page-footer--display {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
+  .page-footer {
+    display: block;
+  }
+
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     width: 620px;
-    padding: 0 20px 0 20px;
+    padding: 20px 20px 0 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    display: block;
+  }
+
   .page-footer__wrapper {
     width: 940px;
     padding: 0 130px 0 130px;
@@ -37,5 +113,9 @@
 
   .page-footer__element {
     padding-bottom: 70px;
+  }
+
+  .page-footer__element--copyright {
+    font-size: 18px;
   }
 }

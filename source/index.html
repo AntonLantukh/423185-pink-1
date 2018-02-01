@@ -70,6 +70,7 @@
       </section>
       <article class="reviews">
         <h2 class="visually-hidden">Отзывы</h2> <!--Скрыт-->
+        <button class="reviews__arrow reviews__arrow--left" id="btn-arrow-1" type="button">1</button>
         <div class="reviews__wrapper slides">
           <div class ="reviews__item slides__item">
             <span class="reviews__author-name">Николай Петров</span>
@@ -87,6 +88,7 @@
             <span class="reviews__author-job">25 лет, водитель маршрутки</span>
           </div>
         </div>
+        <button class="reviews__arrow reviews__arrow--right" id="btn-arrow-2" type="button">2</button>
         <div class="reviews__slider slider">
           <button class="slider__toggle" id="btn-reviews-1" type="button">1</button>
           <button class="slider__toggle" id="btn-reviews-2" type="button">2</button>
@@ -98,11 +100,15 @@
         <div class="prices__wrapper slides">
           <table class="prices__table slides__item">
             <tr>
+              <th class="prices__header prices__header--hide prices--fullshow">
+                <h3 class="prices__tarrif"></h3>
+                <span class="prices__value"></span>
+              </th>
               <th class="prices__header">
                 <h3 class="prices__tarrif">База</h3>
                 <span class="prices__value">1,99 usd</span>
               </th>
-              <th class="prices__header">
+              <th class="prices__header prices__header--popular">
                 <h3 class="prices__tarrif">Стандарт</h3>
                 <span class="prices__value">3,99 usd</span>
               </th>
@@ -112,6 +118,9 @@
               </th>
             </tr>
             <tr>
+              <td class="prices__class prices--fullshow">
+                <span class="prices__type prices__type--fullshow">Розовый фильтр</span>
+              </td>
               <td class="prices__class">
                 <span class="prices__type">Розовый фильтр</span>
                 <span class="prices__option prices__option--include">Да</span>
@@ -126,9 +135,12 @@
               </td>
             </tr>
             <tr>
+              <td class="prices__class prices--fullshow">
+                <span class="prices__type prices__type--fullshow">Смайлики</span>
+              </td>
               <td class="prices__class">
                 <span class="prices__type">Смайлики</span>
-                <span class="prices__option prices__option--include">Да</span>
+                <span class="prices__option prices__option--exclude">Нет</span>
               </td>
               <td class="prices__class">
                 <span class="prices__type">Смайлики</span>
@@ -140,9 +152,8 @@
               </td>
             </tr>
             <tr>
-              <td class="prices__class">
-                <span class="prices__type">Комментарии</span>
-                <span class="prices__option prices__option--exclude">Нет</span>
+              <td class="prices__class prices--fullshow">
+                <span class="prices__type prices__type--fullshow">Комментарии</span>
               </td>
               <td class="prices__class">
                 <span class="prices__type">Комментарии</span>
@@ -151,6 +162,10 @@
               <td class="prices__class">
                 <span class="prices__type">Комментарии</span>
                 <span class="prices__option prices__option--exclude">Нет</span>
+              </td>
+              <td class="prices__class">
+                <span class="prices__type">Комментарии</span>
+                <span class="prices__option prices__option--include">Да</span>
               </td>
             </tr>
           </table>
@@ -161,27 +176,47 @@
           <button class="slider__toggle" id="btn-prices-3" type="button">3</button>
         </div>
       </article>
-    </main>
-    <footer class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="visually-hidden">Контакты</h2> <!--Скрыт-->
-        <p class="contacts__description">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="contacts__flex-wrapper">
-          <section class="contacts__element">
-            <h3 class="contacts__header">Звоните:</h3>
-            <a href="tel:+78125556666" class="contacts__link">+7 (812) 555-66-66</a>
-          </section>
-          <section class="contacts__element">
-            <h3 class="contacts__header">Пишите:</h3>
-            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
-          </section>
-          <section class="contacts__element">
-            <h3 class="contacts__header">Приезжайте в гости:</h3>
-            <a href="#" class="contacts__link">ул. Большая Конюшенная, 19/8</a>
-          </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контакты</h2> <!--Скрыт-->
+          <p class="contacts__description">Остались вопросы? Свяжитесь с нами!</p>
+          <div class="contacts__flex-wrapper">
+            <section class="contacts__element contacts__element--call">
+              <h3 class="contacts__header">Звоните:</h3>
+              <a href="tel:+78125556666" class="contacts__link">+7 (812) 555-66-66</a>
+            </section>
+            <section class="contacts__element contacts__element--write">
+              <h3 class="contacts__header">Пишите:</h3>
+              <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+            </section>
+            <section class="contacts__element contacts__element--come">
+              <h3 class="contacts__header">Приезжайте в гости:</h3>
+              <a href="#" class="contacts__link">ул. Большая Конюшенная, 19/8</a>
+            </section>
+          </div>
         </div>
-    </div>
-    <iframe class="contacts__map"></iframe>
+        <iframe class="contacts__map"></iframe>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <section class="page-footer__element page-footer__element--logo page-footer__element--logo">
+          <a class="page-footer__image" href="index.html">
+            <img src="../source/img/logo-pink-blue-mobile.svg" alt="Pink">
+          </a>
+        </section>
+        <section class="page-footer__element page-footer__element--social">
+          <a class="page-footer__social-button page-footer__social-button--twitter" href="#">Twitter</a>
+          <a class="page-footer__social-button page-footer__social-button--facebook" href="#">Facebook</a>
+          <a class="page-footer__social-button page-footer__social-button--youtube" href="#">Youtube</a>
+        </section>
+        <section class="page-footer__element page-footer__element--copyright">
+          <span class="page-footer__madeby">Разработано</span>
+          <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="../source/img/htmlacademy.svg" alt="HTML Academy" width="40px" height="50px">
+          </a>
+        </section>
+      </div>
     </footer>
     <script src="../source/js/page-header.js"></script>
     <script src="../source/js/slider.js"></script>

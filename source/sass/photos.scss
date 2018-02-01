@@ -3,30 +3,32 @@
 
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   margin: 0 auto;
   padding: 0 20px 0 20px;
-
-  text-align: center;
 }
 
 .photos__item {
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .photos__wrapper {
     width: 620px;
     flex-direction: row;
+    justify-content: space-between;
     align-content: baseline;
     flex-wrap: wrap;
   }
 
   .photos__item {
     width: 300px;
+    margin-bottom: 20px;
   }
 
   .photos__item--main {
     width: 620px;
+    margin-bottom: 28px;
   }
 }
 
@@ -37,10 +39,11 @@
   }
 
   .photos__item {
-    margin-bottom: 80px;
+    margin-bottom: 56px;
   }
 
   .photos__item--main {
     width: 940px;
+    margin-bottom: 3px;
   }
 }
