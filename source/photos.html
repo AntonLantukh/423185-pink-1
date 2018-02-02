@@ -100,15 +100,28 @@
         </div>
         <div class="photo-posting__wrapper">
           <form class="photo-posting__form editing-place" method="post" action="https://echo.htmlacademy.ru/">
-            <img class="editing-place__image" src="#" alt="Фотография для редактирования">
-            <label for="cut">Обрезать</label>
-            <input class="editing-place__slider visually-hidden" type="range" id="cut">
-            <label for="color">Цвет</label>
-            <input class="editing-place__slider visually-hidden" type="range" id="color">
-            <label for="balance">Баланс белого</label>
-            <input class="editing-place__slider" type="range" id="balance">
-            <input class="editing-place__button-post button-index" type="submit" value="Запостить">
-            <input class="editing-place__button-cancel button-index" type="reset" value="Отмена">
+            <img class="editing-place__image" src="../source/img/photo-road-mobile@1x.jpg" alt="Фотография для редактирования">
+            <div class="editing-place__wrapper">
+              <div class="editing-place__range-controls">
+                <div class="editing-place__label">
+                  <div class="editing-place__filter editing-place__filter--crop">Обрезать</div>
+                  <div class="editing-place__filter editing-place__filter--fill">Заливка</div>
+                  <div class="editing-place__filter editing-place__filter--contrast">Баланс</div>
+                </div>
+                <div class="editing-place__scale">
+                  <div class="editing-place__toggle editing-place__toggle--crop">Обрезать</div>
+                  <div class="editing-place__bar editing-place__bar--crop"></div>
+                  <div class="editing-place__toggle editing-place__toggle--fill editing-place--hidden">Заливка</div>
+                  <div class="editing-place__bar editing-place__bar--fill editing-place--hidden"></div>
+                  <div class="editing-place__toggle editing-place__toggle--contrast editing-place--hidden">Баланс</div>
+                  <div class="editing-place__bar editing-place__bar--contrast editing-place--hidden"></div>
+                </div>
+              </div>
+              <div class="editing-place__button-container">
+                <input class="editing-place__button-post button-index" type="submit" value="Запостить">
+                <input class="editing-place__button-cancel button-index" type="reset" value="Отмена">
+              </div>
+            </div>
           </form>
         </div>
       </section>
