@@ -71,6 +71,7 @@
 }
 
 .editing-place__bar {
+  position: relative;
   width: 240px;
   height: 2px;
   margin: 0 auto;
@@ -79,9 +80,11 @@
 
 .editing-place__bar::after {
   position: absolute;
-  top: 10px;
+  top: -37px;
+  left: -41px;
   width: 320px;
   height: 1px;
+  content: "";
   background-color: rgb(221, 223, 224);
 }
 
@@ -199,6 +202,12 @@
     margin-bottom: 70px;
   }
 
+  .editing-place__bar::after {
+    width: 274px;
+    top: 39px;
+    left: -42px;
+  }
+
   .editing-place__toggle--crop {
     top: -5px;
     left: 146px;
@@ -247,6 +256,12 @@
     width: 290px;
     margin-bottom: 70px;
     margin-left: 7px;
+  }
+
+  .editing-place__bar::after {
+    width: 406px;
+    top: 36px;
+    left: -85px;
   }
 
   .editing-place__label {

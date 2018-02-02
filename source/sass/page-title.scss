@@ -21,6 +21,14 @@
   color: $color-white;
 }
 
+.page-title--form {
+  padding: 91px 0 53px 0;
+}
+
+.page-title__header--form {
+  width: 230px;
+}
+
 @media (min-width: $tablet-width) {
   .page-title {
     width: 660px;

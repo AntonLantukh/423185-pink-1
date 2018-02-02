@@ -16,15 +16,20 @@
 }
 
 .form-group__input-label {
+  margin: 0;
+  padding-left: 23px;
+
   font-size: 14px;
-  line-height: 30px;
+  line-height: 34px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
   color: $color-pink;
   text-transform: uppercase;
 }
 
 .form-group__input {
-  padding: 10px 0;
+  width: 257px;
+  padding: 16px 0 16px 21px;
+  margin-bottom: 15px;
 
   font-size: 18px;
   line-height: 30px;
@@ -41,12 +46,48 @@
 }
 
 .form-group__checkbox-label {
-  margin-bottom: 45px;
+  margin-bottom: 41px;
 
   font-size: 18px;
-  line-height: 30px;
+  line-height: 0;
   font-family: "Open Sans Regular", "Arial", sans-serif;
   color: $color-blue;
+}
+
+.form-group__description--achievements {
+  width: 250px;
+  margin: 0 auto;
+  padding-top: 23px;
+}
+
+.form-group__checkbox-input {
+  display: none;
+}
+
+.form-group__checkbox-label::before {
+  position: relative;
+  display: inline-block;
+  top: 14px;
+  width: 37px;
+  height: 37px;
+  margin-right: 25px;
+  content: "";
+  background-color: $color-white;
+  border: 2px solid rgb(220, 229, 229);
+}
+
+.form-group__checkbox-input:checked + .form-group__checkbox-label::before {
+  background-image: url("../img/icon-yes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-group__checkbox-label:hover::before {
+  border: 2px solid $color-black;
+}
+
+.form-group__checkbox-label:active::before {
+  border: 2px solid $color-pink;
 }
 
 @media (min-width: $tablet-width) {

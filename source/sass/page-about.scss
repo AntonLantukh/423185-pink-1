@@ -18,6 +18,14 @@
   background-color: $color-white;
 }
 
+.page-about-form {
+  padding: 45px 0 13px 0;
+}
+
+.page-about__description--form {
+  width: 288px;
+}
+
 @media (min-width: $tablet-width) {
   .page-about {
     width: 660px;

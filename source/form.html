@@ -26,11 +26,11 @@
       </nav>
     </header>
     <main>
-      <div class="page-title">
-        <h1 class="page-title__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-title page-title--form">
+        <h1 class="page-title__header page-title__header--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-      <div class="page-about">
-        <p class="page-about__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонсную карту! Пожалуйста, заполните форму ниже:</p>
+      <div class="page-about page-about-form">
+        <p class="page-about__description page-about__description--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </div>
       <section class="contest-form">
           <form class="contest-form__body main-form" method="post" action="https://echo.htmlacademy.ru/">
@@ -42,21 +42,21 @@
                 <label class="form-group__input-label" for="name">Имя:</label>
                 <input class="form-group__input" type="text" id="name" placeholder="Введите ваше имя *" required>
                 <label class="form-group__input-label" for="second-name">Отчество:</label>
-                <input class="form-group__input" type="text" id="second-name" placeholder="Ну и отчество тоже *" required>
+                <input class="form-group__input" type="text" id="second-name" placeholder="Ну и отчество тоже" required>
               </fieldset>
               <fieldset class="main-form__achievements form-group">
-                <h2 class="form-group__description">Ваши безбашенные достижения в путешествии</h2>
-                <input type="checkbox" id="shark" checked>
+                <h2 class="form-group__description form-group__description--achievements">Ваши безбашенные достижения в путешествии</h2>
+                <input class="form-group__checkbox-input" type="checkbox" id="shark" checked>
                 <label class="form-group__checkbox-label" for="shark">Сделал селфи с акулой</label>
-                <input type="checkbox" id="beach" checked>
+                <input class="form-group__checkbox-input" type="checkbox" id="beach" checked>
                 <label class="form-group__checkbox-label" for="beach">Обгорел на пляже</label>
-                <input type="checkbox" id="chuck">
+                <input class="form-group__checkbox-input" type="checkbox" id="chuck">
                 <label class="form-group__checkbox-label" for="chuck">Видел Чака Норриса</label>
-                <input type="checkbox" id="souvenir">
+                <input class="form-group__checkbox-input" type="checkbox" id="souvenir">
                 <label class="form-group__checkbox-label" for="souvenir">Накупил сувениров</label>
-                <input type="checkbox" id="tower" checked>
+                <input class="form-group__checkbox-input" type="checkbox" id="tower" checked>
                 <label class="form-group__checkbox-label" for="tower">Удержал башню</label>
-                <input type="checkbox" id="hotel">
+                <input class="form-group__checkbox-input" type="checkbox" id="hotel">
                 <label class="form-group__checkbox-label" for="hotel">Разгромил отель</label>
               </fieldset>
               <fieldset class="main-form__contacts form-group">
@@ -68,11 +68,11 @@
               </fieldset>
               <fieldset class="main-form__application form-group">
                 <h2 class="form-group__description">С каким приложением путешествовали?</h2>
-                <input type="radio" id="ios">
+                <input class="form-group__checkbox-input" type="radio" id="ios">
                 <label class="form-group__checkbox-label" for="ios">Pink для iOS</label>
-                <input type="radio" id="android">
+                <input class="form-group__checkbox-input" type="radio" id="android">
                 <label class="form-group__checkbox-label" for="android">Pink на Android</label>
-                <input type="radio" id="windows-phone">
+                <input class="form-group__checkbox-input" type="radio" id="windows-phone">
                 <label class="form-group__checkbox-label" for="windows-phone">Windows Phone</label>
               </fieldset>
               <fieldset class="main-form__emotions form-group">
@@ -100,9 +100,9 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <section class="page-footer__element page-footer__element--logo">
+        <section class="page-footer__element page-footer__element--logo page-footer__element--logo">
           <a class="page-footer__image" href="index.html">
-            <img src="#" alt="Pink">
+            <img src="../source/img/logo-pink-blue-mobile.svg" alt="Pink">
           </a>
         </section>
         <section class="page-footer__element page-footer__element--social">
@@ -111,12 +111,13 @@
           <a class="page-footer__social-button page-footer__social-button--youtube" href="#">Youtube</a>
         </section>
         <section class="page-footer__element page-footer__element--copyright">
-          <span>Разработано</span>
+          <span class="page-footer__madeby">Разработано</span>
           <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="#" alt="HTML Academy">
+            <img src="../source/img/htmlacademy.svg" alt="HTML Academy" width="40px" height="50px">
           </a>
         </section>
       </div>
     </footer>
+    <script src="../source/js/page-header.js"></script>
   </body>
 </html>
