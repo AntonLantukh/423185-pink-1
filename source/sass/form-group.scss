@@ -1,9 +1,5 @@
-.form-group {
-  padding: 20px 20px;
-}
-
 .form-group__description {
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 
   font-size: 14px;
   line-height: 18px;
@@ -18,9 +14,10 @@
 .form-group__input-label {
   margin: 0;
   padding-left: 23px;
+  padding-bottom: 11px;
+  padding-top: 7px;
 
   font-size: 14px;
-  line-height: 34px;
   font-family: "Open Sans Regular", "Arial", sans-serif;
   color: $color-pink;
   text-transform: uppercase;
@@ -40,10 +37,11 @@
 }
 
 .form-group__input--wide {
-  width: 276px;
-  height: 200px;
+  width: 254px;
+  height: 165px;
   margin: 0 auto;
 }
+
 
 .form-group__checkbox-label {
   margin-bottom: 41px;
@@ -54,13 +52,39 @@
   color: $color-blue;
 }
 
+.form-group__radio-label {
+  margin-bottom: 34px;
+  margin-left: 3px;
+
+  font-size: 18px;
+  line-height: 0;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
+  color: $color-blue;
+}
+
+.form-group__description--contacs {
+  display: none;
+}
+
 .form-group__description--achievements {
   width: 250px;
   margin: 0 auto;
-  padding-top: 23px;
+  padding-top: 24px;
+}
+
+.form-group__description--application {
+  padding-bottom: 8px;
+}
+
+.form-group__description--emotions {
+  padding-bottom: 3px;
 }
 
 .form-group__checkbox-input {
+  display: none;
+}
+
+.form-group__radio-input {
   display: none;
 }
 
@@ -70,7 +94,7 @@
   top: 14px;
   width: 37px;
   height: 37px;
-  margin-right: 25px;
+  margin-right: 28px;
   content: "";
   background-color: $color-white;
   border: 2px solid rgb(220, 229, 229);
@@ -90,15 +114,128 @@
   border: 2px solid $color-pink;
 }
 
+.form-group__radio-label::before {
+  position: relative;
+  display: inline-block;
+  top: 14px;
+  width: 37px;
+  height: 37px;
+  margin-right: 25px;
+  content: "";
+  background-color: $color-white;
+  border-radius: 50%;
+  border: 2px solid rgb(220, 229, 229);
+}
+
+.form-group__radio-input:checked + .form-group__radio-label::before {
+  background-image: url("../img/icon-map-marker.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-group__radio-label:hover::before {
+  border: 2px solid $color-black;
+}
+
+.form-group__radio-label:active::before {
+  border: 2px solid $color-pink;
+}
+
 @media (min-width: $tablet-width) {
   .form-group__input {
-    width: 100%;
+    width: 500px;
+    margin-bottom: 49px;
   }
 
   .form-group__input--wide {
-    width: 636px;
-    height: 190px;
+    width: 478px;
+    height: 155px;
+  }
+
+  .form-group__input--name {
+    width: 540px;
+  }
+
+  .form-group__input-label {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .form-group__radio-label {
+    margin-left: 60px;
+    margin-bottom: 35px;
+  }
+
+  .form-group__radio-label::before {
+    margin-right: 19px;
+  }
+
+  .form-group__description--application {
+    padding: 6px 15px 30px 15px;
     margin: 0 auto;
+    background-color: $color-white;
+    z-index: 1;
+  }
+
+  .form-group__description--contacs {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 15px 37px 15px;
+    background-color: $color-white;
+    z-index: 1;
+  }
+
+  .form-group__description--achievements {
+    width: 400px;
+    padding-bottom: 29px;
+    background-color: $color-white;
+    z-index: 1;
+  }
+
+  .form-group__contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 60px 0 60px;
+  }
+
+  .form-group__input--phone {
+    order: 1;
+    width: 476px;
+    margin-bottom: 0;
+  }
+
+  .form-group__input-label--phone {
+    order: 2;
+    margin-left: 23px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+
+  .form-group__input--email {
+    order: 3;
+    width: 476px;
+    margin-bottom: 0;
+  }
+
+  .form-group__input-label--email {
+    order: 4;
+    margin-left: 23px;
+    margin-top: 8px;
+  }
+
+  .form-group__achievements-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 59px;
+  }
+
+  .form-group__description--emotions {
+    padding: 0 20px 39px 20px;
+    margin: 0 auto;
+    background-color: $color-white;
+    z-index: 1;
   }
 }
 

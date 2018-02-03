@@ -30,13 +30,22 @@
   .page-about {
     width: 660px;
     margin: 0 auto;
-    padding: 90px 0 77px 0;
+    padding: 90px 0 45px 0;
   }
 
   .page-about__description {
-    width: 454px;
+    width: 530px;
 
     font-size: 18px;
+  }
+
+  .page-about__description--additional {
+    width: 530px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Open Sans Regular", "Arial", sans-serif;
+    color: $color-blue;
   }
 }
 
