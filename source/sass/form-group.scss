@@ -66,10 +66,22 @@
   display: none;
 }
 
+.form-group__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .form-group__description--achievements {
   width: 250px;
   margin: 0 auto;
   padding-top: 24px;
+}
+
+.form-group__achievements-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .form-group__description--application {
@@ -193,9 +205,6 @@
   }
 
   .form-group__contacts-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     padding: 0 60px 0 60px;
   }
 
@@ -225,9 +234,6 @@
   }
 
   .form-group__achievements-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     padding-left: 59px;
   }
 
@@ -240,14 +246,75 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-group {
-    margin-bottom: 66px;
-    padding: 50px 70px 50px 70px;
+  .form-group__input {
+    width: 315px;
+    margin-bottom: 49px;
+    margin-left: 18px;
+  }
+
+  .form-group__input--name {
+    width: 354px;
+  }
+
+  .form-group__radio-label {
+    margin-left: 48px;
+  }
+
+  .form-group__description--application {
+    padding: 8px 15px 30px 15px;
+  }
+
+  .form-group__description--contacts {
+    margin-left: 100px;
+    padding-bottom: 8px 15px 34px 15px;
+  }
+
+  .form-group__contacts-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 820px;
+    padding: 0 40px 0 40px;
+  }
+
+  .form-group__input--phone {
+    order: 1;
+    width: 353px;
+    margin: 0;
+  }
+
+  .form-group__input-label--phone {
+    order: 3;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+
+  .form-group__input--email {
+    order: 2;
+    width: 353px;
+    margin: 0;
+  }
+
+  .form-group__input-label--email {
+    order: 4;
+    margin-right: 257px;
+    margin-top: 8px;
+  }
+
+  .form-group__achievements-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    padding-left: 36px;
   }
 
   .form-group__input--wide {
-    width: 818px;
-    height: 126px;
+    width: 796px;
+    height: 91px;
     margin: 0 auto;
+  }
+
+  .form-group__description--emotions {
+    padding: 0 20px 34px 20px;
   }
 }

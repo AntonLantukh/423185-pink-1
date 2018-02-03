@@ -1,6 +1,9 @@
 .prices {
+  width: 320px;
   margin: 0 auto;
+  padding-top: 90px;
 
+  background-color: $color-grey;
   text-transform: uppercase;
 }
 
@@ -157,6 +160,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .prices {
+    width: 660px;
+    padding-top: 0;
+  }
+
   .prices--fullshow {
     display: table-cell;
 
@@ -231,6 +239,7 @@
 
 @media (min-width: $desktop-width) {
   .prices {
+    width: 1200px;
     margin: 0 auto 20px auto;
   }
 
