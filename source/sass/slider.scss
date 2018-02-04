@@ -10,8 +10,17 @@
   border-radius: 50%;
   border: none;
   background-color: rgb(190, 194, 199);
+  cursor: pointer;
 
   &:hover {
+    background-color: rgb(126, 134, 143);
+  }
+
+  &:active {
+    background-color: rgb(233, 235, 236);
+  }
+
+  &:focus {
     width: 12px;
     height: 12px;
 

@@ -119,6 +119,21 @@
   color: $color-pink;
 
   border: 2px solid $color-pink;
+
+  &:hover {
+    color: rgb(255, 255, 255);
+    background-color: $color-pink;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $color-pink;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $color-pink;
+  }
 }
 
 .editing-place__button-cancel {
@@ -131,7 +146,22 @@
   color: rgba(40, 54, 69, 0.1);
 
   background-color: $color-grey;
-  border: 2px solid rgba(40, 54, 69, 0.1);
+  border: 2px solid rgb(221, 223, 224);
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.1);
+    border: 2px solid rgb(181, 185, 190);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgb(181, 185, 190);
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgb(181, 185, 190);
+  }
 }
 
 .editing-place--hidden {

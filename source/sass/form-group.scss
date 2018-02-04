@@ -34,12 +34,26 @@
   color: $color-blue;
 
   border: 2px solid $color-grey;
+  outline: none;
+
+  &:hover {
+    border: 2px solid $color-black;
+  }
+
+  &:active {
+    border: 2px solid $color-pink;
+  }
+
+  &:focus {
+    border: 2px solid $color-pink;
+  }
 }
 
 .form-group__input--wide {
   width: 254px;
   height: 165px;
   margin: 0 auto;
+  z-index: 1;
 }
 
 
@@ -206,6 +220,7 @@
 
   .form-group__contacts-wrapper {
     padding: 0 60px 0 60px;
+    z-index: 1;
   }
 
   .form-group__input--phone {
@@ -235,6 +250,7 @@
 
   .form-group__achievements-wrapper {
     padding-left: 59px;
+    z-index: 1;
   }
 
   .form-group__description--emotions {

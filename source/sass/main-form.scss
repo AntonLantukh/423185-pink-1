@@ -111,7 +111,7 @@
     background-color: $color-white;
   }
 
-  .main-form__application::after {
+  .main-form__application::before {
     position: absolute;
     top: 16px;
     width: 618px;
@@ -129,7 +129,7 @@
     background-color: $color-white;
   }
 
-  .main-form__achievements::after {
+  .main-form__achievements::before {
     position: absolute;
     top: 53px;
     width: 618px;
@@ -148,7 +148,7 @@
     background-color: $color-white;
   }
 
-  .main-form__contacts::after {
+  .main-form__contacts::before {
     position: absolute;
     top: 15px;
     width: 618px;
@@ -169,7 +169,7 @@
     background-color: $color-white;
   }
 
-  .main-form__emotions::after {
+  .main-form__emotions::before {
     position: absolute;
     left: 0;
     top: 8px;
@@ -231,28 +231,28 @@
     background-color: $color-white;
   }
 
-  .main-form__application::after {
+  .main-form__application::before {
     top: 18px;
     left: -8px;
     width: 431px;
     height: 295px;
   }
 
-  .main-form__contacts::after {
+  .main-form__contacts::before {
     top: 15px;
     left: 0;
     width: 935px;
     height: 160px;
   }
 
-  .main-form__achievements::after {
+  .main-form__achievements::before {
     top: 43px;
     width: 937px;
     height: 228px;
     left: 0;
   }
 
-  .main-form__emotions::after {
+  .main-form__emotions::before {
     top: 8px;
     width: 938px;
     height: 212px;

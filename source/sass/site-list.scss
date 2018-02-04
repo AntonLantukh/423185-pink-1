@@ -33,6 +33,23 @@
 .site-list__link {
   text-decoration: none;
   color: $color-white;
+
+  &:hover {
+    color: rgba(210, 40, 86, 0.6);
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
+  &:focus {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.site-list__link--active {
+  text-decoration: none;
+  color: $color-white;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,5 +79,11 @@
     position: static;
     z-index: 0;
     background-color: transparent;
+  }
+
+  .site-list__link--active {
+    text-decoration: none;
+    color: $color-white;
+    border-bottom: 2px solid $color-white;
   }
 }

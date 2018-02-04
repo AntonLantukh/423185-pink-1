@@ -47,8 +47,22 @@
   height: 50px;
   font-size: 0;
   text-decoration: none;
-  border: 3px solid $color-grey;
+  border: 3px solid rgb(233, 235, 236);
   border-radius: 50%;
+
+  &:hover {
+    border: 3px solid $color-black;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    border: 3px solid rgb(233, 235, 236);
+  }
+
+  &:focus {
+    color: rgba(210, 40, 86, 0.3);
+    border: 3px solid rgb(233, 235, 236);
+  }
 }
 
 .page-footer__social-button::after {

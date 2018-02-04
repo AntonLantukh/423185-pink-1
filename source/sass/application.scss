@@ -34,6 +34,21 @@
 
   background-color: $color-dark-blue;
   border: 2px solid $color-white;
+
+  &:hover {
+    color: $color-pink;
+    background-color: $color-white;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: $color-white;
+  }
+
+  &:focus {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: $color-white;
+  }
 }
 
 .application__description {

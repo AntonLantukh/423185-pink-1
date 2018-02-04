@@ -49,6 +49,19 @@
   font-family: "Open Sans Regular", "Arial", sans-serif;
   color: $color-pink;
   text-decoration: none;
+
+  &:hover {
+    color: $color-black;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:focus {
+    color: rgba(40, 54, 69, 0.3);
+  }
 }
 
 .contacts__map {
