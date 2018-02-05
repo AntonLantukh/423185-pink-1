@@ -118,11 +118,11 @@
 @media (min-width: $desktop-width) {
   .contacts {
     width: 1200px;
-    padding-left: 127px;
-    padding-right: 127px;
   }
 
   .contacts__flex-wrapper {
+    margin: 0 auto;
+
     flex-wrap: no-wrap;
     justify-content: space-around;
     align-items: baseline;
@@ -166,5 +166,7 @@
   .contacts__map {
     width: 1200px;
     height: 492px;
+
+    margin: 0 auto;
   }
 }
