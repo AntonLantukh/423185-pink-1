@@ -9,4 +9,22 @@
 
   background-color: $color-green;
   border: 0;
+
+  &:hover {
+    background-color: rgb(28, 155, 94);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgb(28, 155, 94);
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgb(28, 155, 94);
+  }
+
+  &:disabled {
+    background-color: $color-grey;
+  }
 }

@@ -1,0 +1,30 @@
+.slider__toggle {
+  margin: 0 16px 0 0;
+  padding: 0;
+
+  width: 6px;
+  height: 6px;
+
+  content: "";
+  font-size: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(190, 194, 199);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(126, 134, 143);
+  }
+
+  &:active {
+    background-color: rgb(233, 235, 236);
+  }
+
+  &:focus {
+    width: 12px;
+    height: 12px;
+
+    background-color: $color-white;
+    border: 3px solid $color-black;
+  }
+}

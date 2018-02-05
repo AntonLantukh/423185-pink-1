@@ -8,98 +8,89 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__toggles pre-menu">
-        <a class="page-header__logo pre-menu__logo" href="№">
-          <img src="#" alt="Pink">
-        </a>
-        <button class="page-header__toggler pre-menu__burger">Меню</button>
+      <div class="page-header__container">
+        <div class="page-header__logo-container page-header__logo-container--closed page-header__logo-container--nojs">
+          <a class="page-header__logo" href="№">
+            <span>Логотип</span>
+          </a>
+          <button class="page-header__toggler page-header__toggler--nojs">
+            <span>Открыть меню</span>
+          </button>
+        </div>
+        <nav class ="main-nav main-nav--closed main-nav--nojs">
+          <ul class="main-nav__list main-nav__list--nojs site-list">
+            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link--active">Фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+            <li class="site-list__item site-list__item--last"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class ="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a class="site-list__link" href="index.html">Главная</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Фотографии</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
-      <div class="page-title">
-        <h1 class="page-title__header">Фотографии пользователей</h1>
+      <div class="page-title page-title--photos">
+        <h1 class="page-title__header page-title__header--photos">Фотографии пользователей</h1>
       </div>
-      <div class="page-about">
-        <p class="page-about__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <div class="page-about page-about--photos">
+        <p class="page-about__description page-about__description--photos">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
       <section class="photos">
         <div class="photos__wrapper">
           <section class="photos__item loaded-post photos__item--main">
-            <img class="loaded-post__image" src="#" alt="Мост">
-            <blockquote class="loaded-post__review">
-              <span class="loaded-post__review-author">Анна</span>
-              <span class="loaded-post__review-time">(5 минут назад)</span>
-              <p class="loaded-post__review-description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="loaded-post__review-likes">Нравится: 215</div>
-              <span class="loaded-post__review-heart">Лайк</span>
+            <span class="loaded-post__image-popular">Панорама дня</span>
+            <img class="loaded-post__image loaded-post__image--main" src="../source/img/panorama-mobile@1x.jpg" alt="Мост">
+            <blockquote class="loaded-post__review loaded-post__review--main">
+              <span class="loaded-post__review-author">Анна <span class="loaded-post__review-time">(5 минут назад)</span></span>
+              <p class="loaded-post__review-description loaded-post__review-description--main">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="loaded-post__review-likes loaded-post__review-likes--main">Нравится: 215</div>
             </blockquote>
           </section>
           <section class="photos__item loaded-post">
-            <img class="loaded-post__image" src="#" alt="Камера">
+            <img class="loaded-post__image loaded-post__image" src="../source/img/photo-car-mobile@1x.jpg" alt="Камера">
             <blockquote class="loaded-post__review">
-              <span class="loaded-post__review-author">Левон</span>
-              <span class="loaded-post__review-time">(5 часов назад)</span>
+              <span class="loaded-post__review-author">Левон <span class="loaded-post__review-time">(5 часов назад)</span></span>
               <p class="loaded-post__review-description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="loaded-post__review-likes">Нравится: 356</div>
-              <span class="loaded-post__review-heart">Лайк</span>
             </blockquote>
           </section>
           <section class="photos__item loaded-post">
-            <img class="loaded-post__image" src="#" alt="Барабаны">
+            <img class="loaded-post__image loaded-post__image" src="../source/img/photo-drumset-mobile@1x.jpg" alt="Барабаны">
             <blockquote class="loaded-post__review">
-              <span class="loaded-post__review-author">Антон</span>
-              <span class="loaded-post__review-time">(12 часов назад)</span>
+              <span class="loaded-post__review-author">Антон <span class="loaded-post__review-time">(12 часов назад)</span></span>
               <p class="loaded-post__review-description">Соседи будут рады!</p>
               <div class="loaded-post__review-likes">Нравится: 666</div>
-              <span class="loaded-post__review-heart">Лайк</span>
             </blockquote>
           </section>
           <section class="photos__item loaded-post">
-            <img class="loaded-post__image" src="#" alt="Небо">
+            <img class="loaded-post__image" src="../source/img/photo-window-mobile@1x.jpg" alt="Небо">
             <blockquote class="loaded-post__review">
-              <span class="loaded-post__review-author">Борис</span>
-              <span class="loaded-post__review-time">(20 часов назад)</span>
+              <span class="loaded-post__review-author">Борис <span class="loaded-post__review-time">(20 часов назад)</span></span>
               <p class="loaded-post__review-description">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="loaded-post__review-likes">Нравится: 215</div>
-              <span class="loaded-post__review-heart">Лайк</span>
             </blockquote>
           </section>
           <section class="photos__item loaded-post">
-            <img class="loaded-post__image" src="#" alt="Ярмарка">
+            <img class="loaded-post__image" src="../source/img/photo-fair-mobile@1x.jpg" alt="Ярмарка">
             <blockquote class="loaded-post__review">
-              <span class="loaded-post__review-author">Сергей</span>
-              <span class="loaded-post__review-time">(25 часов назад)</span>
+              <span class="loaded-post__review-author">Сергей <span class="loaded-post__review-time">(25 часов назад)</span></span>
               <p class="loaded-post__review-description">Самая кубанская в мире!</p>
               <div class="loaded-post__review-likes">Нравится: 4</div>
-              <span class="loaded-post__review-heart">Лайк</span>
             </blockquote>
           </section>
           <section class="photos__item loaded-post">
-            <img class="loaded-post__image" src="#" alt="Земля">
+            <img class="loaded-post__image" src="../source/img/photo-pov-mobile@1x.jpg" alt="Земля">
             <blockquote class="loaded-post__review">
-              <span class="loaded-post__review-author">Максим</span>
-              <span class="loaded-post__review-time">(40 часов назад)</span>
+              <span class="loaded-post__review-author">Максим <span class="loaded-post__review-time">(40 часов назад)</span></span>
               <p class="loaded-post__review-description">Где снег-то?</p>
               <div class="loaded-post__review-likes">Нравится: 150</div>
-              <span class="loaded-post__review-heart">Лайк</span>
             </blockquote>
           </section>
           <section class="photos__item loaded-post">
-            <img class="loaded-post__image" src="#" alt="Самолет">
+            <img class="loaded-post__image" src="../source/img/photo-wing-mobile@1x.jpg" alt="Самолет">
             <blockquote class="loaded-post__review">
-              <span class="loaded-post__review-author">Надежда</span>
-              <span class="loaded-post__review-time">(45 часов назад)</span>
+              <span class="loaded-post__review-author">Надежда <span class="loaded-post__review-time">(45 часов назад)</span></span>
               <p class="loaded-post__review-description">Всем GM и взаимные лайки!</p>
               <div class="loaded-post__review-likes">Нравится: 2560</div>
-              <span class="loaded-post__review-heart">Лайк</span>
             </blockquote>
           </section>
         </div>
@@ -111,24 +102,37 @@
         </div>
         <div class="photo-posting__wrapper">
           <form class="photo-posting__form editing-place" method="post" action="https://echo.htmlacademy.ru/">
-            <img class="editing-place__image" src="#" alt="Фотография для редактирования">
-            <label for="cut">Обрезать</label>
-            <input class="editing-place__slider visually-hidden" type="range" id="cut">
-            <label for="color">Цвет</label>
-            <input class="editing-place__slider visually-hidden" type="range" id="color">
-            <label for="balance">Баланс белого</label>
-            <input class="editing-place__slider" type="range" id="balance">
-            <input class="editing-place__button-post button-index" type="submit" value="Запостить">
-            <input class="editing-place__button-cancel button-index" type="reset" value="Отмена">
+            <img class="editing-place__image" src="../source/img/photo-road-mobile@1x.jpg" alt="Фотография для редактирования">
+            <div class="editing-place__wrapper">
+              <div class="editing-place__range-controls">
+                <div class="editing-place__label">
+                  <div class="editing-place__filter editing-place__filter--crop">Обрезать</div>
+                  <div class="editing-place__filter editing-place__filter--fill">Заливка</div>
+                  <div class="editing-place__filter editing-place__filter--contrast">Баланс</div>
+                </div>
+                <div class="editing-place__scale">
+                  <div class="editing-place__toggle editing-place__toggle--crop">Обрезать</div>
+                  <div class="editing-place__bar editing-place__bar--crop"></div>
+                  <div class="editing-place__toggle editing-place__toggle--fill editing-place--hidden">Заливка</div>
+                  <div class="editing-place__bar editing-place__bar--fill editing-place--hidden"></div>
+                  <div class="editing-place__toggle editing-place__toggle--contrast editing-place--hidden">Баланс</div>
+                  <div class="editing-place__bar editing-place__bar--contrast editing-place--hidden"></div>
+                </div>
+              </div>
+              <div class="editing-place__button-container">
+                <input class="editing-place__button-post button-index" type="submit" value="Запостить">
+                <input class="editing-place__button-cancel button-index" type="reset" value="Отмена">
+              </div>
+            </div>
           </form>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--display">
       <div class="page-footer__wrapper">
-        <section class="page-footer__element page-footer__element--logo">
+        <section class="page-footer__element page-footer__element--logo page-footer__element--logo">
           <a class="page-footer__image" href="index.html">
-            <img src="#" alt="Pink">
+            <img src="../source/img/logo-pink-blue-mobile.svg" alt="Pink">
           </a>
         </section>
         <section class="page-footer__element page-footer__element--social">
@@ -137,12 +141,13 @@
           <a class="page-footer__social-button page-footer__social-button--youtube" href="#">Youtube</a>
         </section>
         <section class="page-footer__element page-footer__element--copyright">
-          <span>Разработано</span>
+          <span class="page-footer__madeby">Разработано</span>
           <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="#" alt="HTML Academy">
+            <img src="../source/img/htmlacademy.svg" alt="HTML Academy" width="40" height="50">
           </a>
         </section>
       </div>
     </footer>
+    <script src="../source/js/page-header.js"></script>
   </body>
 </html>

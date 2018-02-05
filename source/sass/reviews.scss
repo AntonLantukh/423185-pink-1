@@ -1,16 +1,24 @@
 .reviews {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
 }
 
 .reviews__wrapper {
-  padding: 40px 20px 35px 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  padding: 40px 20px 12px 22px;
 }
 
 .reviews__item {
   display: flex;
   flex-direction: column;
+  width: 280px;
+  padding-right: 40px;
 }
 
 .reviews__author-name {
@@ -27,48 +35,117 @@
   color: $color-blue;
 }
 
+.reviews__author-job {
+  display: none;
+}
+
 .reviews__slider {
-  margin-bottom: 125px;
+  margin-bottom: 36px;
+  padding-top: 290px;
+  padding-left: 14px;
+  text-align: center;
+}
+
+.reviews__arrow {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
     width: 660px;
+    padding-bottom: 6px;
   }
 
   .reviews__wrapper {
-    padding: 490px 0 45px 0;
+    padding: 40px 20px 12px 25px;
   }
 
   .reviews__item {
     display: flex;
     flex-direction: column-reverse;
+
+    width: 620px;
   }
 
   .reviews__author-name {
+    order: 2;
+    padding-bottom: 4px;
     font-size: 20px;
   }
 
   .reviews__description {
+    order: 3;
+    padding-bottom: 16px;
     font-size: 18px;
   }
 
+  .reviews__author-job {
+    order: 1;
+    display: inline;
+    padding-bottom: 3px;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: "Open Sans Regular", "Arial", sans-serif;
+  }
+
   .reviews__slider {
-    margin-bottom: 105px;
+    margin-bottom: 66px;
+    padding-top: 271px;
+    padding-left: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
     width: 1200px;
+    padding-bottom: 450px;
+  }
+
+  .reviews__wrapper {
+    padding: 168px 20px 12px 244px;
+    left: -79.7%;
   }
 
   .reviews__author-name {
     font-size: 24px;
   }
 
+  .reviews__author-job {
+    font-size: 18px;
+  }
+
   .reviews__item {
-    width: 690px;
+    width: 706px;
     margin: 0 auto;
+    padding-right: 250px;
+    text-align: center;
+  }
+
+  .reviews__slider {
+    display: none;
+  }
+
+  .reviews__arrow {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+
+    font-size: 0;
+    background-color: grey;
+    border: none;
+
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .reviews__arrow--left {
+    left: 130px;
+    top: 211px;
+  }
+
+  .reviews__arrow--right {
+    right: 130px;
+    top: 211px;
   }
 }

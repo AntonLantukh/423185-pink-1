@@ -7,7 +7,6 @@
 /// Основные блоки
 @import "button-index.scss";
 @import "button-form.scss";
-@import "pre-menu.scss";
 @import "page-header.scss";
 @import "main-nav.scss";
 @import "site-list.scss";
@@ -15,9 +14,10 @@
 @import "download.scss";
 @import "advantages.scss";
 @import "advantages-list.scss";
+@import "effect.scss";
 @import "reviews.scss";
 // @import "slides.scss";
-// @import "slider.scss";
+@import "slider.scss";
 @import "prices.scss";
 @import "contacts.scss";
 @import "photos.scss";
@@ -25,7 +25,6 @@
 @import "photo-posting.scss";
 @import "editing-place.scss";
 @import "page-footer.scss";
-@import "contest-form.scss";
 @import "page-about.scss";
 @import "page-title.scss";
 @import "main-form.scss";

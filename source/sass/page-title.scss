@@ -1,10 +1,8 @@
 .page-title {
-  width: 320px;
-  margin: 0 auto;
-  padding: 20px 0 86px 0;
-  text-align: center;
+  width: 100%;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: $color-blue;
 }
@@ -12,7 +10,9 @@
 .page-title__header {
   width: 168px;
   margin: 0 auto;
-  padding: 0;
+  padding: 90px 0 53px 0;
+  text-align: center;
+
 
   font-size: 24px;
   line-height: 30px;
@@ -20,32 +20,48 @@
   color: $color-white;
 }
 
+.page-title--form {
+  padding: 91px 0 0 0;
+}
+
+.page-title__header--form {
+  width: 230px;
+}
+
 @media (min-width: $tablet-width) {
-  .page-title {
-    width: 660px;
-    margin: 0 auto;
-    padding: 88px 0 150px 0;
+  .page-title--photos {
+    padding: 134px 0 60px 0;
   }
 
   .page-title__header {
-    width: 390px;
-
+    width: 500px;
     font-size: 50px;
     line-height: 60px;
+  }
+
+  .page-title__header--form {
+    padding: 134px 0 84px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-title {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 76px 0 106px 0;
-  }
-
   .page-title__header {
-    width: 400px;
+    width: 760px;
+    padding: 176px 0 100px 0;
 
     font-size: 50px;
     line-height: 60px;
+  }
+
+  .page-title--photos {
+    padding: 134px 0 3px 0;
+  }
+
+  .page-title__header--form {
+    padding: 84px 0 100px 0;
+  }
+
+  .page-title__header--photos {
+    width: 400px;
   }
 }

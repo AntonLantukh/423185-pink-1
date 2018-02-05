@@ -1,37 +1,62 @@
 .application {
-  width: 320px;
-  margin: 0 auto;
-  padding-top: 395px;
-
-  text-align: center;
-
+  width: 100%;
   background-image:
     url("../img/iphone-hand-mobile@1x.png"),
     url("../img/bg-back-mobile@1x.jpg");
+
   background-color: $color-dark-blue;
-  background-size: 50%, 320px 395px;
-  background-position-y: 215px, 0;
+  background-size: contain, 100%;
+  background-position: 90% 25%, center -9px;
   background-repeat: no-repeat no-repeat;
+}
+
+.application__container {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 460px;
+
+  text-align: center;
+  z-index: 2;
 }
 
 .application__wrapper {
   padding: 0 20px;
 }
 
+.application__slogan {
+  display: none;
+}
+
 .application__button {
   margin-top: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   font-size: 18px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: $color-white;
 
   background-color: $color-dark-blue;
-  border: 3px solid $color-white;
+  border: 2px solid $color-white;
+
+  &:hover {
+    color: $color-pink;
+    background-color: $color-white;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: $color-white;
+  }
+
+  &:focus {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: $color-white;
+  }
 }
 
 .application__description {
-  padding: 35px 0;
+  padding-top: 6px;
+  padding-bottom: 30px;
   font-size: 14px;
   line-height: 24px;
   font-family: "Open Sans Light", "Arial", sans-serif;
@@ -39,31 +64,72 @@
 }
 
 @media (min-width: $tablet-width) {
-  .application {
+  .application__container {
     width: 620px;
+
     padding: 0 20px 0 20px;
 
-    background-size: 50%, 768px 620px;
-    background-position-y: 194px, 0;
-    background-position-x: 305px, 0;
+    background-size: 70%, 100%;
+    background-position-y: 175px, 0;
+    background-position-x: 170px, 0;
   }
 
   .application__wrapper {
     width: 300px;
-    padding: 235px 200px 112px 0;
+    padding: 150px 340px 80px 0;
+  }
+
+  .application__slogan {
+    display: block;
+    font-size: 40px;
+    line-height: 50px;
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    color: $color-white;
+  }
+
+  .application__button {
+    margin-top: 28px;
+    margin-bottom: 45px;
+    padding: 15px 44px;
+    border-radius: 26px;
+  }
+
+  .application__description {
+    margin: 0;
+    padding-top: 36px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .application {
+  .application__container {
     width: 940px;
     padding: 0 130px 0 130px;
-
-    background-size: 50%, 1200px 743px;
   }
 
   .application__wrapper {
     width: 300px;
-    padding: 347px 640px 122px 0;
+    padding: 220px 768px 90px 0;
+  }
+
+  .application__slogan {
+    display: block;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .application__button {
+    margin-top: 49px;
+    margin-bottom: 71px;
+    padding: 16px 28px;
+
+    font-size: 21px;
+    line-height: 18px;
+
+    background-color: transparent;
+  }
+
+  .application__description {
+    padding-top: 54px;
   }
 }
