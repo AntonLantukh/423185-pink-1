@@ -1,5 +1,7 @@
 .effect {
   display: none;
+  width: 100%;
+  background-color: $color-white;
 }
 
 .effect__title {
@@ -33,12 +35,15 @@
 @media (min-width: $tablet-width) {
   .effect {
     display: block;
+  }
+
+  .effect__wrapper {
     width: 660px;
     margin: 0 auto;
   }
 
-  .effect__wrapper {
-    padding: 81px 20px 66px 334px;
+  .effect__element {
+    padding: 81px 20px 67px 329px;
   }
 
   .effect__title {
@@ -58,12 +63,15 @@
 
 @media (min-width: $desktop-width) {
   .effect {
-    width: 1200px;
     background-color: $color-grey;
   }
 
   .effect__wrapper {
-    padding: 86px 20px 115px 495px;
+    width: 1200px;
+  }
+
+  .effect__element {
+    padding: 113px 20px 115px 495px;
   }
 
   .effect--transform {

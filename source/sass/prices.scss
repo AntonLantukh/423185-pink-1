@@ -1,9 +1,13 @@
 .prices {
+  width: 100%;
+  background-color: $color-grey;
+}
+
+.prices__container {
   width: 320px;
   margin: 0 auto;
-  padding-top: 90px;
+  padding-top: 95px;
 
-  background-color: $color-grey;
   text-transform: uppercase;
 }
 
@@ -161,7 +165,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .prices {
+  .prices__container {
     width: 660px;
     padding-top: 0;
   }
@@ -239,7 +243,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .prices {
+  .prices__container {
     width: 1200px;
     margin: 0 auto 20px auto;
   }

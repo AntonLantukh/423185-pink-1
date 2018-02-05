@@ -1,9 +1,5 @@
 .advantages-list {
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-position-x: 50%;
-  background-position-y: 435px;
-  background-repeat: no-repeat;
-  background-color: $color-grey;
+  width: 100%;
 }
 
 .advantages-list__item {
@@ -36,18 +32,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    width: 320px;
-
-    background-size: 40%;
-    background-position-x: 5%;
-    background-position-y: -50px;
-  }
-
   .advantages-list__item {
     padding: 0 0 36px 0;
   }
@@ -67,23 +51,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages-list {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    width: auto;
-    background-image:
-      url("../img/iphone-screen-mobile@1x.png"),
-      url("../img/iphone-screen-mobile@1x.png"),
-      url("../img/iphone-screen-mobile@1x.png");
-
-    background-size: 16%;
-    background-position-x: 18%, 50%, 82%;
-    background-position-y: -95px;
-  }
-
   .advantages-list__item {
-    width: 234px;
+    width: 238px;
   }
 
   .advantages-list__item-title {
