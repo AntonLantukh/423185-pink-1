@@ -40,10 +40,15 @@
   .effect__wrapper {
     width: 660px;
     margin: 0 auto;
+
+    background-image: url("../img/icon-timer.svg");
+    background-position-x: 2%;
+    background-position-y: 11px;
+    background-repeat: no-repeat;
   }
 
   .effect__element {
-    padding: 81px 20px 67px 329px;
+    padding: 94px 20px 64px 329px;
   }
 
   .effect__title {
@@ -68,6 +73,7 @@
 
   .effect__wrapper {
     width: 1200px;
+    background-position-x: 14%;
   }
 
   .effect__element {

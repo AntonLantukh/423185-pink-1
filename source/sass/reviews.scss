@@ -99,6 +99,10 @@
   .reviews {
     width: 1200px;
     padding-bottom: 450px;
+
+    background-image: url("../img/icon-quotes.svg");
+    background-position: 50% 18%;
+    background-repeat: no-repeat;
   }
 
   .reviews__wrapper {
@@ -132,20 +136,23 @@
     height: 41px;
 
     font-size: 0;
-    background-color: grey;
+    background-color: transparent;
     border: none;
 
-    z-index: 10;
     cursor: pointer;
   }
 
   .reviews__arrow--left {
     left: 130px;
     top: 211px;
+
+    background-image: url("../img/icon-review-arrow-left.svg");
   }
 
   .reviews__arrow--right {
     right: 130px;
     top: 211px;
+
+    background-image: url("../img/icon-review-arrow-right.svg");
   }
 }

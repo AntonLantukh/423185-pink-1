@@ -1,19 +1,30 @@
 .application {
   width: 100%;
+
+  background-color: $color-dark-blue;
+}
+
+.application__image-container {
+  height: 462px;
   background-image:
     url("../img/iphone-hand-mobile@1x.png"),
     url("../img/bg-back-mobile@1x.jpg");
 
-  background-color: $color-dark-blue;
-  background-size: contain, 100%;
-  background-position: 90% 25%, center -9px;
+  background-size: 256px 286px, cover;
+  background-position: 0 100%, center;
   background-repeat: no-repeat no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/iphone-hand-mobile@2x.png"),
+      url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .application__container {
   width: 320px;
   margin: 0 auto;
-  padding-top: 460px;
+  padding-top: 0;
 
   text-align: center;
   z-index: 2;
@@ -64,6 +75,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .application {
+    background-image:
+      url("../img/iphone-hand-tablet@1x.png"),
+      url("../img/bg-back-tablet@1x.jpg");
+
+    background-size: 700px 545px, cover;
+    background-position: 50% 100%, center;
+    background-repeat: no-repeat no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/iphone-hand-tablet@2x.png"),
+        url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .application__image-container {
+    display: none;
+  }
+
   .application__container {
     width: 620px;
 
@@ -102,6 +133,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .application {
+    background-image:
+      url("../img/iphone-hand-desktop@1x.png"),
+      url("../img/bg-back-desktop@1x.jpg");
+    background-size: 1050px 645px, cover;
+    background-position: 56% 100%, center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/iphone-hand-desktop@2x.png"),
+        url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
   .application__container {
     width: 940px;
     padding: 0 130px 0 130px;

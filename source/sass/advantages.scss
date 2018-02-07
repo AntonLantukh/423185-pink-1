@@ -11,11 +11,16 @@
   margin: 0 auto;
   padding: 15px 20px 286px 20px;
 
+  background-size: 157px 320px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position-x: 50%;
   background-position-y: 435px;
   background-repeat: no-repeat;
   background-color: $color-grey;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+  }
 }
 
 .advantages__header {
@@ -46,16 +51,26 @@
     flex-direction: column;
     width: 320px;
     margin: 0 auto;
-    padding: 18px 7px 20px 330px;
+    padding: 79px 7px 9px 330px;
 
-    background-size: 40%;
+    background-clip: border-box;
+    background-color: $color-grey;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-size: 268px 481px;
+    background-repeat: no-repeat;
     background-position-x: 5%;
-    background-position-y: -50px;
+    background-position-y: 11px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+    }
   }
+
 
   .advantages__header-container {
     width: 600px;
-    margin: 48px auto 100px auto;
+    margin: 48px auto 0 auto;
+    padding-bottom: 40px;
 
     font-size: 40px;
     line-height: 50px;
@@ -85,16 +100,23 @@
     justify-content: space-between;
     width: 874px;
     margin: 0 auto;
-    padding: 257px 162px 5px 161px;
+    padding: 376px 162px 5px 161px;
 
     background-image:
-      url("../img/iphone-screen-mobile@1x.png"),
-      url("../img/iphone-screen-mobile@1x.png"),
-      url("../img/iphone-screen-mobile@1x.png");
+      url("../img/iphone-screen-1-desktop@1x.png"),
+      url("../img/iphone-screen-2-desktop@1x.png"),
+      url("../img/iphone-screen-3-desktop@1x.png");
 
-    background-size: 16%;
-    background-position-x: 18%, 50%, 82%;
-    background-position-y: -143px;
+    background-size: 292px 302px;
+    background-position-x: 14%, 50%, 86%;
+    background-position-y: 16px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/iphone-screen-1-desktop@2x.png"),
+        url("../img/iphone-screen-2-desktop@2x.png"),
+        url("../img/iphone-screen-3-desktop@2x.png");
+    }
   }
 
   .advantages__header {
@@ -104,8 +126,8 @@
 
   .advantages__header-container {
     width: 800px;
-    margin: 68px auto 96px auto;
-    padding-bottom: 77px;
+    margin: 68px auto 26px auto;
+    padding-bottom: 30px;
 
     font-size: 50px;
     line-height: 60px;

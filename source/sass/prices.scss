@@ -237,8 +237,12 @@
   }
 
   .prices__header--popular::before {
-    top: 6%;
+    top: 7%;
     left: 5%;
+  }
+
+  .prices__header--popular::after {
+    background-image: url("../img/bg-hit-tablet.svg");
   }
 }
 
