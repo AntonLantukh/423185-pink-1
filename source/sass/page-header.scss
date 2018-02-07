@@ -2,15 +2,18 @@
   position: absolute;
 
   width: 100%;
-  height: 70px;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header--static {
+  position: static;
 }
 
 .page-header__container {
   display: flex;
   flex-direction: column;
 
-  width: 320px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -25,7 +28,8 @@
 }
 
 .page-header__logo-container--closed {
-  width: 280px;
+  width: auto;
+  padding: 0 20px;
 }
 
 .page-header__logo-container--opened {
@@ -113,21 +117,23 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    height: 110px;
+    width: 100%;
   }
 
   .page-header__container {
-    width: 660px;
+    width: 100%;
     margin: 0 auto;
   }
 
   .page-header__logo-container {
+    width: auto;
     min-height: 110px;
     padding: 0 20px;
   }
 
   .page-header__logo-container--closed {
     width: 620px;
+    margin: 0 auto;
   }
 
   .page-header__logo {
