@@ -57,19 +57,21 @@
   text-transform: uppercase;
 }
 
-.loaded-post__review-likes::after {
+.loaded-post__review-heart svg {
+  fill: $color-pink;
+}
+
+.loaded-post__review-heart {
   position: absolute;
-  width: 13px;
+
+  width: 12px;
   height: 12px;
 
-  top: 40%;
-  left: 3%;
-  content: "";
+  bottom: 7%;
+  left: 8%;
   transform: translate(-50%, -50%);
-
-  background-image: url("../img/icon-heart.svg");
-  background-repeat: no-repeat;
 }
+
 
 .loaded-post__image {
   width: 280px;

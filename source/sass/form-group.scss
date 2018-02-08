@@ -236,6 +236,23 @@
     margin-bottom: 24px;
   }
 
+  .form-group__label-phone-picture {
+    position: absolute;
+    top: 94px;
+    right: 51px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 62px;
+    height: 62px;
+
+    content: "";
+    background-color: $color-grey;
+    transform: translate(-50%, -50%);
+  }
+
   .form-group__input--email {
     order: 3;
     width: 476px;
@@ -246,6 +263,29 @@
     order: 4;
     margin-left: 23px;
     margin-top: 8px;
+  }
+
+  .form-group__label-email-picture {
+    position: absolute;
+
+    top: 226px;
+    right: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 62px;
+    height: 62px;
+
+    content: "";
+    background-color: $color-grey;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-group__label-phone-picture,
+  .form-group__label-email-picture svg {
+    fill: $color-pink;
   }
 
   .form-group__achievements-wrapper {
@@ -305,6 +345,11 @@
     margin-bottom: 24px;
   }
 
+  .form-group__label-phone-picture {
+    top: 94px;
+    right: 473px;
+  }
+
   .form-group__input--email {
     order: 2;
     width: 353px;
@@ -315,6 +360,11 @@
     order: 4;
     margin-right: 257px;
     margin-top: 8px;
+  }
+
+  .form-group__label-email-picture {
+    top: 94px;
+    right: 31px;
   }
 
   .form-group__achievements-wrapper {
