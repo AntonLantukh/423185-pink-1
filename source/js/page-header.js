@@ -8,7 +8,7 @@ var iconBurger= document.querySelector('.page-header__burger');
 var iconCross = document.querySelector('.page-header__cross');
 
 navList.classList.remove('main-nav--nojs');
-logoContainer.classList.remove('page-header__logo-container--nojs');
+pageHeader.classList.remove('page-header--nojs');
 headerToggler.classList.remove('page-header__toggler--nojs');
 
 headerToggler.addEventListener('click', function() {

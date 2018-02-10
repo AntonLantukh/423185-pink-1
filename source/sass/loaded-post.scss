@@ -148,15 +148,14 @@
     left: 71.5%;
   }
 
-  .loaded-post__review-likes::after {
-    top: 45%;
-    left: 263px;
+  .loaded-post__review-heart {
+    bottom: 17%;
+    left: 87%;
   }
 
-  .loaded-post__review-likes--main::after {
-    position: absolute;
-    top: 13%;
-    left: 119%;
+  .loaded-post__review-heart--main {
+    bottom: 66%;
+    left: 94%;
   }
 }
 
