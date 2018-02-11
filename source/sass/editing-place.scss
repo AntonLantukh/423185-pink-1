@@ -16,10 +16,10 @@
   justify-content: space-around;
   align-items: center;
 
-  width: 240px;
+  width: 224px;
   margin: 0 auto;
   padding-top: 31px;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
 }
 
 .editing-place__filter svg {
@@ -27,6 +27,8 @@
 }
 
 .editing-place__filter {
+  width: 50px;
+
   &:hover svg {
     fill: rgba(40, 54, 69, 0.5);
   }
@@ -60,7 +62,7 @@
 
 .editing-place__bar::after {
   position: absolute;
-  top: -37px;
+  top: 36px;
   left: -41px;
   width: 320px;
   height: 1px;
@@ -177,12 +179,17 @@
     padding-top: 17px;
   }
 
+  .editing-place__toggle {
+    width: 10px;
+    height: 10px;
+  }
+
   .editing-place__label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    padding: 0 0 0 44px;
+    padding: 0 0 0 30px;
   }
 
   .editing-place__filter {
@@ -208,14 +215,14 @@
   }
 
   .editing-place__bar {
-    width: 200px;
+    width: 186px;
     margin-bottom: 70px;
   }
 
   .editing-place__bar::after {
     width: 274px;
-    top: 39px;
-    left: -42px;
+    top: 35px;
+    left: -67px;
   }
 
   .editing-place__toggle--crop {

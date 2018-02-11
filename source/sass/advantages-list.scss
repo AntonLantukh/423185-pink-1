@@ -14,7 +14,7 @@
 .advantages-list__item--friends::after {
   position: absolute;
   left: 57px;
-  bottom: -285px;
+  bottom: -287px;
   width: 157px;
   height: 280px;
   content: "";
@@ -55,14 +55,14 @@
 
 @media (min-width: $tablet-width) {
   .advantages-list__item {
-    padding: 0 0 36px 0;
+    padding: 0 0 37px 0;
   }
 
   .advantages-list__item--friends::after {
     width: 268px;
     height: 481px;
     left: -310px;
-    top: -358px;
+    top: -353px;
 
     background-clip: border-box;
     background-color: transparent;
@@ -81,6 +81,10 @@
 
   .advantages-list__item-description {
     text-align: left;
+  }
+
+  .advantages-list__item-description--new-line {
+    display: block;
   }
 
   .advantages-list__item--time {
@@ -104,7 +108,7 @@
 
   .advantages-list__item--mood::after {
     position: absolute;
-    top: -388px;
+    top: -357px;
     left: 24px;
     width: 186px;
     height: 302px;
@@ -121,7 +125,7 @@
 
   .advantages-list__item--world::after {
     position: absolute;
-    top: -386px;
+    top: -357px;
     left: 28px;
     width: 186px;
     height: 302px;
@@ -137,7 +141,7 @@
   }
 
   .advantages-list__item--friends::after {
-    top: -387px;
+    top: -357px;
     left: 29px;
     width: 186px;
     height: 302px;
@@ -165,5 +169,9 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+  }
+
+  .advantages-list__item-description--new-line {
+    display: inline;
   }
 }

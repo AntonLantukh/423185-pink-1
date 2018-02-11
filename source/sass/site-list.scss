@@ -58,7 +58,6 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    min-height: 110px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -66,15 +65,18 @@
   }
 
   .site-list__item {
-    flex-basis: 131px;
+    flex-basis: 155px;
+    margin-left: 16px;
     padding: 0;
 
+    text-align: center;
     border: none;
     box-shadow: none;
   }
 
   .site-list__item--last {
     position: static;
+    text-align: right;
     z-index: 0;
     background-color: transparent;
   }

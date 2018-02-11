@@ -41,7 +41,7 @@
 
 .page-header__logo-container--opened {
   background-color: $color-blue;
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
 }
 
@@ -114,9 +114,9 @@
   }
 
   .page-header__logo-container {
+    align-items: baseline;
     width: auto;
-    min-height: 110px;
-    padding: 0 20px;
+    padding: 28px 20px 11px 20px;
   }
 
   .page-header__logo-container--closed {
@@ -140,19 +140,21 @@
   .page-header__container {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     width: 940px;
-    padding: 0 130px;
+    padding: 15px 130px 18px 130px;
   }
 
   .page-header__logo-container {
     width: 160px;
-    padding: 0;
+    padding: 7px 0 0 0;
   }
 
   .page-header__logo-container--closed {
     position: static;
     width: 280px;
+    margin: 0;
     background-color: transparent;
   }
 
