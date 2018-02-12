@@ -81,6 +81,7 @@
 }
 
 .form-group__contacts-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -174,10 +175,12 @@
 
 .form-group__label-phone-picture {
   display: none;
+  z-index: 1;
 }
 
 .form-group__label-email-picture {
   display: none;
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
@@ -219,6 +222,7 @@
   }
 
   .form-group__description--application {
+    width: 350px;
     padding: 6px 15px 30px 15px;
     margin: 0 auto;
     background-color: $color-white;
@@ -227,6 +231,7 @@
 
   .form-group__description--contacs {
     display: block;
+    width: 200px;
     margin: 0 auto;
     padding: 6px 15px 36px 15px;
     background-color: $color-white;
@@ -260,8 +265,8 @@
 
   .form-group__label-phone-picture {
     position: absolute;
-    top: 94px;
-    right: 51px;
+    top: 14%;
+    right: 4.8%;
 
     display: flex;
     align-items: center;
@@ -290,8 +295,8 @@
   .form-group__label-email-picture {
     position: absolute;
 
-    top: 226px;
-    right: 50px;
+    top: 69%;
+    right: 4.8%;
 
     display: flex;
     align-items: center;
@@ -316,6 +321,7 @@
   }
 
   .form-group__description--emotions {
+    width: 200px;
     padding: 0 20px 39px 20px;
     margin: 0 auto;
     background-color: $color-white;
@@ -362,7 +368,7 @@
   .form-group__input--phone {
     order: 1;
     width: 353px;
-    margin: 0;
+    margin: 0 64px 0 0;
   }
 
   .form-group__input-label--phone {
@@ -373,8 +379,8 @@
   }
 
   .form-group__label-phone-picture {
-    top: 94px;
-    right: 473px;
+    top: 25%;
+    right: 50%;
   }
 
   .form-group__input--email {
@@ -390,8 +396,8 @@
   }
 
   .form-group__label-email-picture {
-    top: 94px;
-    right: 31px;
+    top: 25%;
+    right: 1%;
   }
 
   .form-group__achievements-wrapper {

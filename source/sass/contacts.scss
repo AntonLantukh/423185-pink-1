@@ -14,8 +14,9 @@
 .contacts__mask {
   position: absolute;
   top: -1px;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 45%;
   z-index: 10;
 }
 
@@ -48,6 +49,7 @@
 }
 
 .contacts__element {
+  width: 250px;
   text-align: center;
 }
 
