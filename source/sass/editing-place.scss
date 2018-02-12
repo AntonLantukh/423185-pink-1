@@ -268,7 +268,7 @@
   }
 
   .editing-place__scale {
-    margin: 0 auto 103px 91px;
+    margin: 0 auto 100px 91px;
   }
 
   .editing-place__bar {
@@ -284,7 +284,7 @@
   }
 
   .editing-place__label {
-    padding: 0 0 0 30px;
+    padding: 0 0 0 7px;
   }
 
   .editing-place__toggle--crop {
@@ -306,7 +306,7 @@
     width: 50px;
     height: 50px;
     margin-top: -24px;
-    margin-bottom: 47px;
+    margin-bottom: 51px;
   }
 
   .editing-place__filter--crop {
@@ -322,10 +322,11 @@
   .editing-place__filter--contrast {
     width: 32px;
     height: 32px;
+    margin-left: 6px;
   }
 
   .editing-place__button-container {
-    margin-left: 9px;
+    margin-left: 4px;
   }
 
   .editing-place__button-post {

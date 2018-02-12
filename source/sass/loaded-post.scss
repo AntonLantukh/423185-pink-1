@@ -169,8 +169,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .loaded-post__review {
-    padding-left: 26px;
+  .loaded-post__review--main {
+    height: 70px;
+    padding-left: 28px;
+    padding-top: 18px;
   }
 
   .loaded-post__image {
@@ -188,13 +190,14 @@
     padding-bottom: 24px;
   }
 
-  .loaded-post__review--main {
-    height: 70px;
-  }
-
   .loaded-post__review-likes--main {
     position: absolute;
-    top: 16%;
-    left: 80.5%;
+    top: 20%;
+    left: 80.4%;
+  }
+
+  .loaded-post__review-heart--main {
+    bottom: 56%;
+    left: 96%;
   }
 }
