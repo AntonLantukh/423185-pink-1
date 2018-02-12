@@ -146,6 +146,11 @@
     padding: 15px 130px 18px 130px;
   }
 
+  .page-header--nojs {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   .page-header__logo-container {
     width: 160px;
     padding: 7px 0 0 0;
