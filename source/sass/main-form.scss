@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-  padding: 21px 20px 19px 20px;
+  padding: 21px 20px 24px 20px;
   border: 0 none;
 }
 
@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-  padding: 20px 20px 19px 20px;
+  padding: 20px 20px 14px 20px;
   background-color: $color-grey;
   border: 0 none;
 }
@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-  padding: 24px 20px 19px 20px;
+  padding: 30px 20px 24px 20px;
   border: 0 none;
 }
 
@@ -42,14 +42,13 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-  padding: 35px 20px 9px 20px;
-  margin-bottom: 9px;
+  margin-bottom: 27px;
+  padding: 28px 20px 21px 20px;
   background-color: $color-grey;
   border: 0 none;
 }
 
 .main-form__emotions {
-  margin-top: 30px;
   margin-bottom: 50px;
   border: 0 none;
 }
@@ -106,8 +105,8 @@
     position: relative;
     order: 2;
     width: 620px;
-    padding: 0 20px 9px 20px;
-    margin-bottom: 73px;
+    margin-bottom: 61px;
+    padding: 2px 20px 21px 20px;
     background-color: $color-white;
   }
 
@@ -125,13 +124,13 @@
     position: relative;
     order: 4;
     width: 620px;
-    margin-bottom: 62px;
+    margin-bottom: 64px;
     background-color: $color-white;
   }
 
   .main-form__achievements::before {
     position: absolute;
-    top: 53px;
+    top: 48px;
     width: 618px;
     height: 550px;
     content: "";
@@ -144,7 +143,7 @@
     order: 3;
     width: 620px;
     padding: 0 20px 9px 20px;
-    margin-bottom: 28px;
+    margin-bottom: 33px;
     background-color: $color-white;
   }
 
@@ -182,6 +181,7 @@
 
   .main-form__send {
     width: 620px;
+    margin-bottom: 54px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -195,6 +195,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-form {
+    margin-bottom: 0;
+  }
+
   .main-form__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -219,6 +223,7 @@
 
   .main-form__contacts {
     width: 900px;
+    padding: 0 20px 14px 20px;
     margin-bottom: 0;
     flex-direction: column;
   }
@@ -246,7 +251,7 @@
   }
 
   .main-form__achievements::before {
-    top: 43px;
+    top: 38px;
     width: 937px;
     height: 228px;
     left: 0;
@@ -265,6 +270,7 @@
 
   .main-form__send {
     width: 940px;
+    margin-bottom: 0;
   }
 
   .main-form__note--add {

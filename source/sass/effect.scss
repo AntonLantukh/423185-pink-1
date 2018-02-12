@@ -38,17 +38,18 @@
   }
 
   .effect__wrapper {
+    position: relative;
     width: 660px;
     margin: 0 auto;
   }
 
   .effect__element {
-    padding: 81px 20px 67px 329px;
+    padding: 94px 20px 64px 329px;
   }
 
   .effect__title {
     width: 170px;
-    padding-bottom: 11px;
+    padding-bottom: 9px;
   }
 
   .effect--transform {
@@ -58,6 +59,36 @@
   .effect__description {
     width: 300px;
     padding-bottom: 11px;
+  }
+
+  .effect__image {
+    position: absolute;
+    left: 3%;
+    top: 15%;
+  }
+
+  .effect__image svg {
+    width: 238px;
+    height: 276px;
+  }
+
+  .effect__image--border {
+    fill: rgb(222, 222, 222);
+  }
+
+  .effect__image--round {
+    fill: $color-pink;
+  }
+
+  .effect__image::after {
+    position: absolute;
+    left: 26%;
+    top: 28%;
+    content: "24";
+    font-size: 96px;
+    line-height: 150px;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    color: $color-pink;
   }
 }
 
@@ -98,5 +129,22 @@
   .effect__link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .effect__image {
+    left: 11%;
+    top: 5%;
+  }
+
+  .effect__image svg {
+    width: 298px;
+    height: 345px;
+  }
+
+  .effect__image::after {
+    left: 26%;
+    top: 28%;
+    font-size: 120px;
+    line-height: 186px;
   }
 }

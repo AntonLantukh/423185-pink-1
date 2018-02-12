@@ -2,15 +2,24 @@
   position: absolute;
 
   width: 100%;
-  height: 70px;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header--nojs {
+  position: static;
+  background-color: $color-blue;
+}
+
+.page-header--static {
+  position: static;
+  background-color: $color-blue;
 }
 
 .page-header__container {
   display: flex;
   flex-direction: column;
 
-  width: 320px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -25,86 +34,69 @@
 }
 
 .page-header__logo-container--closed {
-  width: 280px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .page-header__logo-container--opened {
   background-color: $color-blue;
-}
-
-.page-header__logo-container--nojs {
-  position: static;
-  background-color: $color-blue;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .page-header__logo {
-  position: relative;
-  top: 0;
-  right: 0;
+  fill: $color-white;
 
-  display: block;
-  width: 75px;
-  height: 22px;
+  &:hover svg {
+    fill: $color-pink;
+  }
 
-  font-size: 0;
+  &:active svg {
+    fill: rgba(255, 255, 255, 0.3);
+  }
 
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
+  &:focus svg {
+    fill: $color-pink;
+  }
 }
 
-.page-header__logo::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 75px;
-  height: 22px;
-
-  content: "";
-  transform: translate(-50%, -50%);
-
-  background-image: url("../img/logo-pink-white-mobile.svg");
-  background-repeat: no-repeat;
+.page-header__logo--tablet {
+  display: none;
 }
 
+.page-header__logo--desktop {
+  display: none;
+}
+
+.page-header__burger {
+  fill: $color-white;
+}
+
+.page-header__cross {
+  fill: $color-white;
+}
 
 .page-header__toggler {
-  position: relative;
-  top: 0;
-  right: 0;
-
-  display: block;
-  width: 50px;
-  height: 24px;
-
-  font-size: 0;
-
   cursor: pointer;
   background-color: transparent;
   border: none;
+
+  &:hover svg {
+    fill: $color-pink;
+  }
+
+  &:active svg {
+    fill: rgba(210, 40, 86, 0.3);
+  }
+
+  &:focus svg {
+    fill: $color-pink;
+  }
 }
 
-.page-header__toggler::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: "";
-  transform: translate(-50%, -50%);
-}
-
-.page-header__logo-container--closed .page-header__toggler::after {
-  width: 50px;
-  height: 24px;
-  background-image: url("../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
-}
-
-.page-header__logo-container--opened .page-header__toggler::after {
-  width: 24px;
-  height: 23px;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
+.page-header__toggler--icon-change {
+  display: none;
 }
 
 .page-header__toggler--nojs {
@@ -113,32 +105,34 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    height: 110px;
+    width: 100%;
   }
 
   .page-header__container {
-    width: 660px;
+    width: 100%;
     margin: 0 auto;
   }
 
   .page-header__logo-container {
-    min-height: 110px;
-    padding: 0 20px;
+    align-items: baseline;
+    width: auto;
+    padding: 28px 20px 11px 20px;
   }
 
   .page-header__logo-container--closed {
     width: 620px;
   }
 
-  .page-header__logo {
-    width: 147px;
-    height: 40px;
+  .page-header__logo-container--opened {
+    width: 620px;
   }
 
-  .page-header__logo::after {
-    width: 147px;
-    height: 40px;
-    background-image: url("../img/logo-pink-blue-mobile.svg");
+  .page-header__logo--mobile {
+    display: none;
+  }
+
+  .page-header__logo--tablet {
+    display: inline-block;
   }
 }
 
@@ -146,31 +140,39 @@
   .page-header__container {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     width: 940px;
-    padding: 0 130px;
+    padding: 15px 130px 18px 130px;
+  }
+
+  .page-header--nojs {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header__logo-container {
     width: 160px;
-    padding: 0;
+    padding: 7px 0 0 0;
   }
 
   .page-header__logo-container--closed {
     position: static;
     width: 280px;
+    margin: 0;
     background-color: transparent;
   }
 
-  .page-header__logo {
-    width: 147px;
-    height: 40px;
+  .page-header__logo--mobile {
+    display: none;
   }
 
-  .page-header__logo::after {
-    width: 147px;
-    height: 40px;
-    background-image: url("../img/logo-pink-blue-mobile.svg");
+  .page-header__logo--tablet {
+    display: none;
+  }
+
+  .page-header__logo--desktop {
+    display: block;
   }
 
   .page-header__toggler {
