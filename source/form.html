@@ -117,26 +117,26 @@
               <div class="main-form__initials form-group">
                 <h2 class="visually-hidden">ФИО</h2>
                 <label class="form-group__input-label" for="surname">Фамилия:</label>
-                <input class="form-group__input" type="text" id="surname" placeholder="Укажите фамилию *" required>
+                <input class="form-group__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
                 <label class="form-group__input-label" for="name">Имя:</label>
-                <input class="form-group__input form-group__input--name" type="text" id="name" placeholder="Введите ваше имя *" required>
+                <input class="form-group__input form-group__input--name" name="name" type="text" id="name" placeholder="Введите ваше имя *" required>
                 <label class="form-group__input-label" for="second-name">Отчество:</label>
-                <input class="form-group__input" type="text" id="second-name" placeholder="Ну и отчество тоже" required>
+                <input class="form-group__input" name="second-name" type="text" id="second-name" placeholder="Ну и отчество тоже" required>
               </div>
               <div class="main-form__achievements form-group">
                 <h2 class="form-group__description form-group__description--achievements">Ваши безбашенные достижения в путешествии</h2>
                 <div class="form-group__achievements-wrapper">
-                  <input class="form-group__checkbox-input" type="checkbox" id="shark" checked>
+                  <input class="form-group__checkbox-input" name="shark" type="checkbox" id="shark" checked>
                   <label class="form-group__checkbox-label" for="shark">Сделал селфи с акулой</label>
-                  <input class="form-group__checkbox-input" type="checkbox" id="beach" checked>
+                  <input class="form-group__checkbox-input" name="beach" type="checkbox" id="beach" checked>
                   <label class="form-group__checkbox-label" for="beach">Обгорел на пляже</label>
-                  <input class="form-group__checkbox-input" type="checkbox" id="chuck">
+                  <input class="form-group__checkbox-input" name="chuck" type="checkbox" id="chuck">
                   <label class="form-group__checkbox-label" for="chuck">Видел Чака Норриса</label>
-                  <input class="form-group__checkbox-input" type="checkbox" id="souvenir">
+                  <input class="form-group__checkbox-input" name="souvenir" type="checkbox" id="souvenir">
                   <label class="form-group__checkbox-label" for="souvenir">Накупил сувениров</label>
-                  <input class="form-group__checkbox-input" type="checkbox" id="tower" checked>
+                  <input class="form-group__checkbox-input" name="tower" type="checkbox" id="tower" checked>
                   <label class="form-group__checkbox-label" for="tower">Удержал башню</label>
-                  <input class="form-group__checkbox-input" type="checkbox" id="hotel">
+                  <input class="form-group__checkbox-input" name="hotel" type="checkbox" id="hotel">
                   <label class="form-group__checkbox-label" for="hotel">Разгромил отель</label>
               </div>
               </div>
@@ -147,12 +147,12 @@
                     <svg width="20" height="20"><use xlink:href="#phone-picture"></use></svg>
                   </span>
                   <label class="form-group__input-label form-group__input-label--phone" for="phone">Номер телефона</label>
-                  <input class="form-group__input form-group__input--phone" type="text" id="phone" placeholder="Номер, пожалуйста">
+                  <input class="form-group__input form-group__input--phone" name="phone" type="text" id="phone" placeholder="Номер, пожалуйста">
                   <span class="form-group__label-email-picture">
                     <svg width="18" height="14"><use xlink:href="#mail-picture"></use></svg>
                   </span>
                   <label class="form-group__input-label form-group__input-label--email" for="mail">Адрес почты</label>
-                  <input class="form-group__input form-group__input--email" type="text" id="mail" placeholder="Введите почту *" required>
+                  <input class="form-group__input form-group__input--email" name="email" type="text" id="mail" placeholder="Введите почту *" required>
                 </div>
               </div>
               <div class="main-form__application form-group">
@@ -169,7 +169,7 @@
               <div class="main-form__emotions form-group">
                 <h2 class="form-group__description form-group__description--emotions">Опишите свои эмоции</h2>
                 <label class="form-group__input-label visually-hidden" for="emotions">Эмоции</label>
-                <input class="form-group__input form-group__input--wide" type="text" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
+                <input class="form-group__input form-group__input--wide" name="emotions" type="text" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
               </div>
             </div>
             <div class="main-form__send">
