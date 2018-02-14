@@ -53,7 +53,7 @@ gulp.task("webp", function () {
 
 // Создание спрайта
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/sprite-icons/icon-*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -75,7 +75,9 @@ gulp.task("beautify", function() {
   return gulp.src("build/*.html")
     .pipe(posthtml([
       beautify({
-        indent: 4})
+        indent: 4,
+        blankLines: '0'
+      })
     ]))
     .pipe(gulp.dest("build"))
 });
