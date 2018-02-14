@@ -53,12 +53,12 @@ gulp.task("webp", function () {
 
 // Создание спрайта
 gulp.task("sprite", function () {
-  return gulp.src("source/img/sprite-icons/icon-*.svg")
+  return gulp.src("source/img/sprite-icons/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("build/img/sprite-icons"));
 });
 
 // Вставка спрайтов в html
