@@ -14,7 +14,6 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var htmlmin = require("gulp-htmlmin");
 var jsmin = require("gulp-uglify");
-var beautify = require('posthtml-beautify');
 var include = require("posthtml-include");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
@@ -72,34 +71,21 @@ gulp.task("html", function () {
   .pipe(gulp.dest("build"));
 });
 
-// Красивый html
-gulp.task("beautify", function() {
-  return gulp.src("build/*.html")
-    .pipe(posthtml([
-      beautify({
-        indent: 4,
-        blankLines: '0'
-      })
-    ]))
-    .pipe(gulp.dest("build"))
-});
-
 // html минификатор
 gulp.task("htmlmin", function () {
   return gulp.src("source/*.html")
   .pipe(htmlmin({
     collapseWhitespace: true
   }))
-    .pipe(gulp.dest('build/'));
-  ))
-})
+    .pipe(gulp.dest('build/'))
+});
 
 // js минификатор
 gulp.task("jsmin", function () {
   return gulp.src("source/js/*.js")
   .pipe(jsmin())
-  .pipe(gulp.dest('build/js/'));
-})
+  .pipe(gulp.dest('build/js/'))
+});
 
 // Копирование папок
 gulp.task("copy", function () {
