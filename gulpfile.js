@@ -68,12 +68,12 @@ gulp.task("html", function () {
   .pipe(posthtml([
     include()
   ]))
-  .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("build/"));
 });
 
 // html минификатор
 gulp.task("htmlmin", function () {
-  return gulp.src("source/*.html")
+  return gulp.src("build/*.html")
   .pipe(htmlmin({
     collapseWhitespace: true
   }))
