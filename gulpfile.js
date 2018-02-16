@@ -12,7 +12,8 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
-var beautify = require('posthtml-beautify');
+var htmlmin = require("gulp-htmlmin");
+var jsmin = require("gulp-uglify");
 var include = require("posthtml-include");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
@@ -70,16 +71,20 @@ gulp.task("html", function () {
   .pipe(gulp.dest("build"));
 });
 
-// Красивый html
-gulp.task("beautify", function() {
-  return gulp.src("build/*.html")
-    .pipe(posthtml([
-      beautify({
-        indent: 4,
-        blankLines: '0'
-      })
-    ]))
-    .pipe(gulp.dest("build"))
+// html минификатор
+gulp.task("htmlmin", function () {
+  return gulp.src("source/*.html")
+  .pipe(htmlmin({
+    collapseWhitespace: true
+  }))
+    .pipe(gulp.dest('build/'))
+});
+
+// js минификатор
+gulp.task("jsmin", function () {
+  return gulp.src("source/js/*.js")
+  .pipe(jsmin())
+  .pipe(gulp.dest('build/js/'))
 });
 
 // Копирование папок
@@ -122,7 +127,8 @@ gulp.task("build", function (done) {
     "sprite",
     "webp",
     "html",
-    "beautify",
+    "htmlmin",
+    "jsmin",
     done
   );
 });
