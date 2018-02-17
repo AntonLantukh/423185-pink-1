@@ -264,7 +264,8 @@
   }
 
   .prices__header {
-    padding-top: 6px;
+    padding-top: 7px;
+    padding-left: 5px;
     padding-bottom: 11px;
   }
 
@@ -282,7 +283,7 @@
     padding-left: 20px;
 
     font-size: 18px;
-    line-height: 30px;
+    line-height: 34px;
   }
 
   .prices__tarrif {
@@ -297,6 +298,18 @@
   .prices__option {
     width: 24px;
     height: 28px;
+    margin-left: 37%;
+  }
+
+  .prices__option--include {
+    width: 20px;
+    height: 24px;
+    margin-left: 36%;
+  }
+
+  .prices__option--exclude {
+    width: 34px;
+    height: 29px;
     margin-left: 37%;
   }
 

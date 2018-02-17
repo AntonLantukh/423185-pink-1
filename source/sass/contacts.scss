@@ -115,11 +115,11 @@
 
   .contacts__element {
     width: 250px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 
   .contacts__header {
-    padding-bottom: 10px;
+    padding-bottom: 11px;
   }
 
   .contacts__element:nth-child(3) {
@@ -132,15 +132,15 @@
   }
 
   .contacts__mask {
-    top: -35px;
-    height: 135px;
+    top: 0;
+    height: 68px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     width: 876px;
-    padding: 46px 152px 0 152px;
+    padding: 46px 152px 5px 152px;
   }
 
   .contacts__flex-wrapper {
@@ -162,7 +162,7 @@
   }
 
   .contacts__element {
-    width: 236px;
+    width: 238px;
     padding-bottom: 0;
   }
 
@@ -193,12 +193,12 @@
   }
 
   .contacts__map {
-    height: 492px;
+    height: 522px;
 
     margin: 0 auto;
   }
 
   .contacts__mask {
-    top: -5px;
+    height: 123px;
   }
 }

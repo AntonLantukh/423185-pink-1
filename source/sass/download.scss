@@ -34,3 +34,13 @@
     list-style: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .download__item--apple {
+    margin-top: 5px;
+  }
+
+  .download__item:nth-child(3) {
+    margin: 0 0 5px 0;
+  }
+}

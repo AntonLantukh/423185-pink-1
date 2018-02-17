@@ -187,7 +187,7 @@
 
   .page-footer__wrapper {
     width: 940px;
-    padding: 48px 130px 70px 130px;
+    padding: 37px 130px 70px 130px;
   }
 
   .page-footer__image {
@@ -195,10 +195,15 @@
   }
 
   .page-footer__madeby {
+    padding-top: 16px;
     font-size: 18px;
     line-height: 18px;
     font-family: "Open Sans Regular", "Arial", sans-serif;
     color: $color-blue;
+  }
+
+  .page-footer__link {
+    padding-top: 29px;
   }
 
   .page-footer--photos-desktop {
