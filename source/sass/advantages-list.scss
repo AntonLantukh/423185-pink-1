@@ -13,8 +13,8 @@
 
 .advantages-list__item--friends::after {
   position: absolute;
-  left: 57px;
-  bottom: -287px;
+  left: 62px;
+  bottom: -286px;
   width: 157px;
   height: 280px;
   content: "";
@@ -39,7 +39,7 @@
 }
 
 .advantages-list__item-description {
-  padding-top: 10px;
+  padding-top: 11px;
   margin: 0;
 
   font-size: 14px;
@@ -55,14 +55,14 @@
 
 @media (min-width: $tablet-width) {
   .advantages-list__item {
-    padding: 0 0 37px 0;
+    padding: 0 0 35px 0;
   }
 
   .advantages-list__item--friends::after {
     width: 268px;
     height: 481px;
     left: -310px;
-    top: -353px;
+    top: -356px;
 
     background-clip: border-box;
     background-color: transparent;
@@ -108,7 +108,7 @@
 
   .advantages-list__item--mood::after {
     position: absolute;
-    top: -357px;
+    top: -358px;
     left: 24px;
     width: 186px;
     height: 302px;
@@ -125,8 +125,8 @@
 
   .advantages-list__item--world::after {
     position: absolute;
-    top: -357px;
-    left: 28px;
+    top: -358px;
+    left: 29px;
     width: 186px;
     height: 302px;
     content: "";
@@ -141,8 +141,8 @@
   }
 
   .advantages-list__item--friends::after {
-    top: -357px;
-    left: 29px;
+    top: -358px;
+    left: 31px;
     width: 186px;
     height: 302px;
     content: "";
@@ -158,7 +158,7 @@
 
   .advantages-list__item-title {
     margin: 0;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
 
     font-size: 30px;
     line-height: 30px;

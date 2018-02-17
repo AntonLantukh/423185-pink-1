@@ -38,6 +38,7 @@
 }
 
 .application__button {
+  display: block;
   margin-top: 28px;
   margin-bottom: 30px;
   padding: 16px 36px;
@@ -46,6 +47,7 @@
   font-family: "Open Sans Bold", "Arial", sans-serif;
   color: $color-white;
 
+  text-decoration: none;
   background-color: $color-dark-blue;
   border: 2px solid $color-white;
 
@@ -107,7 +109,7 @@
 
   .application__wrapper {
     width: 300px;
-    padding: 153px 340px 79px 0;
+    padding: 154px 340px 79px 0;
   }
 
   .application__slogan {
@@ -138,7 +140,7 @@
       url("../img/iphone-hand-desktop@1x.png"),
       url("../img/bg-back-desktop@1x.jpg");
     background-size: 1050px 645px, cover;
-    background-position: 96% 100%, center;
+    background-position: 97% 100%, center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image:
@@ -154,12 +156,12 @@
 
   .application__wrapper {
     width: 300px;
-    padding: 220px 768px 90px 0;
+    padding: 108px 768px 94px 0;
   }
 
   .application__slogan {
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     font-size: 50px;
     line-height: 60px;
   }

@@ -1,10 +1,11 @@
 .download {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: baseline;
 
+  width: 202px;
   margin: 0;
-  padding: 0;
+  padding: 0 40px;
   list-style: none;
 }
 
@@ -24,4 +25,12 @@
 
 .download__link {
   font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    width: 210px;
+    padding: 0 45px;
+    list-style: none;
+  }
 }
