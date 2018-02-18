@@ -38,8 +38,8 @@
   align-items: center;
   justify-content: flex-end;
   width: 145px;
-  margin-bottom: 13px;
-  padding-left: 15px;
+  margin-bottom: 21px;
+  padding-left: 8px;
 
   font-size: 14px;
   line-height: 18px;
@@ -80,7 +80,7 @@
   display: flex;
   justify-content: space-between;
   width: 180px;
-  margin-top: 17px;
+  margin-top: 9px;
 }
 
 .page-footer__social-button {
@@ -208,5 +208,13 @@
 
   .page-footer--photos-desktop {
     padding-top: 22px;
+  }
+
+  .page-footer__element--form {
+    margin-left: 7px;
+  }
+
+  .page-footer__element--photo {
+    margin-left: 8px;
   }
 }

@@ -1,7 +1,7 @@
 .photo-posting__about {
   width: 320px;
   margin: 0 auto;
-  padding: 22px 0 40px 0;
+  padding: 19px 0 40px 0;
 
   text-align: center;
 }
@@ -32,7 +32,7 @@
 @media (min-width: $tablet-width) {
   .photo-posting__about {
     width: 660px;
-    padding: 48px 0 66px 0;
+    padding: 45px 0 66px 0;
   }
 
   .photo-posting__description {
@@ -49,9 +49,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photo-posting {
+    margin-bottom: 12px;
+  }
+
   .photo-posting__about {
     width: 1200px;
-    padding: 0 0 66px 0;
+    padding: 3px 0 65px 0;
   }
 
   .photo-posting__description {

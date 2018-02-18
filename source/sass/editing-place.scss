@@ -1,5 +1,5 @@
 .editing-place {
-  padding: 10px 0;
+  padding: 10px 0 13px 0;
 }
 
 .editing-place__image {
@@ -16,10 +16,10 @@
   justify-content: space-around;
   align-items: center;
 
-  width: 224px;
+  width: 254px;
   margin: 0 auto;
-  padding-top: 31px;
-  padding-bottom: 34px;
+  padding-top: 35px;
+  padding-bottom: 32px;
 }
 
 .editing-place__filter svg {
@@ -45,7 +45,7 @@
 
 .editing-place__scale {
   position: relative;
-  margin: 0 auto 75px auto;
+  margin: 0 auto 74px auto;
 }
 
 .editing-place__range-controls {
@@ -72,8 +72,8 @@
 
 .editing-place__toggle {
   position: absolute;
-  width: 13px;
-  height: 13px;
+  width: 11px;
+  height: 11px;
   font-size: 0;
   border: 2px solid $color-pink;
   border-radius: 50%;
@@ -86,12 +86,12 @@
 }
 
 .editing-place__toggle--crop {
-  top: -5px;
+  top: -7px;
   left: 210px;
 }
 
 .editing-place__button-post {
-  width: 280px;
+  width: 277px;
   margin-bottom: 14px;
   padding: 15px 30px;
 
@@ -161,6 +161,7 @@
     justify-content: space-between;
 
     width: 620px;
+    padding: 10px 0 11px 0;
   }
 
   .editing-place__image {
@@ -215,7 +216,8 @@
   }
 
   .editing-place__bar {
-    width: 186px;
+    width: 200px;
+    margin-right: 19px;
     margin-bottom: 70px;
   }
 
@@ -227,12 +229,12 @@
 
   .editing-place__toggle--crop {
     top: -5px;
-    left: 146px;
+    left: 148px;
   }
 
   .editing-place__toggle--fill {
     top: 66px;
-    left: 26px;
+    left: 28px;
   }
 
   .editing-place__toggle--contrast {
@@ -258,7 +260,7 @@
 @media (min-width: $desktop-width) {
   .editing-place {
     width: 810px;
-    padding: 28px 0;
+    padding: 26px 0;
   }
 
   .editing-place__wrapper {
@@ -272,9 +274,9 @@
   }
 
   .editing-place__bar {
-    width: 290px;
+    width: 288px;
     margin-bottom: 70px;
-    margin-left: 7px;
+    margin-left: 6px;
   }
 
   .editing-place__bar::after {
@@ -326,7 +328,7 @@
   }
 
   .editing-place__button-container {
-    margin-left: 4px;
+    margin-left: 5px;
   }
 
   .editing-place__button-post {

@@ -53,6 +53,7 @@
   width: 254px;
   height: 165px;
   margin: 0 auto;
+  padding-left: 17px;
   z-index: 1;
 }
 
@@ -76,7 +77,7 @@
   color: $color-blue;
 }
 
-.form-group__description--contacs {
+.form-group__description--contacts {
   display: none;
 }
 
@@ -150,6 +151,7 @@
   position: relative;
   display: inline-block;
   top: 14px;
+  left: -5px;
   width: 37px;
   height: 37px;
   margin-right: 25px;
@@ -186,12 +188,13 @@
 @media (min-width: $tablet-width) {
   .form-group__input {
     width: 500px;
-    margin-bottom: 49px;
+    margin-bottom: 48px;
   }
 
   .form-group__input--wide {
     width: 478px;
-    height: 155px;
+    height: 158px;
+    padding-top: 13px;
   }
 
   .form-group__input--name {
@@ -209,10 +212,11 @@
 
   .form-group__radio-label {
     margin-left: 60px;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   .form-group__radio-label::before {
+    left: -1px;
     margin-right: 19px;
   }
 
@@ -229,11 +233,11 @@
     z-index: 1;
   }
 
-  .form-group__description--contacs {
+  .form-group__description--contacts {
     display: block;
     width: 200px;
     margin: 0 auto;
-    padding: 6px 15px 36px 15px;
+    padding: 3px 15px 36px 15px;
     background-color: $color-white;
     z-index: 1;
   }
@@ -254,6 +258,7 @@
     order: 1;
     width: 476px;
     margin-bottom: 0;
+    padding-left: 18px;
   }
 
   .form-group__input-label--phone {
@@ -284,6 +289,7 @@
     order: 3;
     width: 476px;
     margin-bottom: 0;
+    padding-left: 18px;
   }
 
   .form-group__input-label--email {
@@ -340,6 +346,10 @@
     width: 354px;
   }
 
+  .form-group__checkbox-label {
+    margin-left: 12px;
+  }
+
   .form-group__checkbox-label::before {
     margin-right: 22px;
   }
@@ -349,13 +359,17 @@
     margin-bottom: 33px;
   }
 
+  .form-group__radio-label::before {
+    margin-right: 18px;
+  }
+
+
   .form-group__description--application {
-    padding: 8px 25px 30px 15px;
+    padding: 4px 25px 30px 13px;
   }
 
   .form-group__description--contacts {
-    margin-left: 100px;
-    padding-bottom: 8px 15px 34px 15px;
+    padding: 8px 15px 33px 15px;
   }
 
   .form-group__contacts-wrapper {
@@ -404,14 +418,17 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 200px;
-    padding-left: 36px;
+    padding-left: 25px;
   }
 
   .form-group__input--wide {
     width: 796px;
     height: 91px;
     margin: 0 auto;
+    padding-top: 15px;
+    padding-left: 17px;
   }
+
 
   .form-group__description--emotions {
     padding: 0 20px 34px 20px;

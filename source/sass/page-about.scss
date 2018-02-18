@@ -18,7 +18,7 @@
   background-color: $color-white;
 }
 
-.page-about-form {
+.page-about--form {
   padding: 45px 0 13px 0;
 }
 
@@ -38,22 +38,22 @@
   }
 
   .page-about--photos {
-    padding: 90px 0 77px 0;
+    padding: 92px 0 77px 0;
   }
 
   .page-about--form {
-    padding: 92px 0 48px 0;
+    padding: 95px 0 48px 0;
   }
 
   .page-about__description {
-    width: 530px;
+    width: 525px;
 
     font-size: 18px;
   }
 
   .page-about__description--additional {
-    display: inline;
-    width: 530px;
+    display: inline-block;
+    padding-right: 5px;
 
     font-size: 18px;
     line-height: 30px;
@@ -80,6 +80,7 @@
 
   .page-about__description--additional {
     display: inline;
+    padding-left: 5px;
   }
 
   .page-about__description--photos {
